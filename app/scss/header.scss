@@ -1,0 +1,600 @@
+/*****--------------------header-----------------*****/
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: $black;
+  color: $white;
+  display: flex;
+  align-items: center;
+
+  &--big {
+    height: 200px;
+  }
+
+  &__inner {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu-burger {
+    cursor: pointer;
+  }
+
+  &__logo {}
+
+  &__logo2 {}
+
+  &__top-menu {
+    display: flex;
+  }
+
+  &__menu-logo {}
+}
+
+.menu-burger {
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--small {
+    display: none;
+    width: 36px;
+    height: 36px;
+
+  }
+}
+
+.logo2 {}
+
+.top-menu {
+  &__link {
+    padding: 10px 0;
+    margin: 0 30px;
+    transition: all .3s;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:active {
+      color: $dark-green;
+    }
+  }
+}
+
+.menu-logo {
+  display: flex;
+  height: 100%;
+
+  & li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &>li:last-child {
+    margin-left: 40px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+
+    &:hover,
+    &:hover path {
+      color: $green;
+      fill: $green;
+
+    }
+
+    &:active,
+    &:active path {
+      color: $dark-green;
+      fill: $dark-green;
+    }
+
+    &--user {
+      height: 100%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      padding-right: 50px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
+    &--big {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--user {
+      display: flex;
+    }
+
+    &--heart {}
+
+    &--bag {}
+  }
+
+  &__nr {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--big {
+      width: 40px;
+      height: 40px;
+
+      font-size: 16px;
+      line-height: 12px;
+    }
+  }
+}
+
+/*****--------------------personal-menu-----------------*****/
+.personal-menu__trigger {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+
+  &.active,
+  &:hover {
+    border-bottom: 2px solid $green;
+  }
+}
+
+.personal-menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background: $black;
+  width: 100%;
+  padding: 10px 0 20px;
+
+  &.active {
+    display: block;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 20px;
+    transition: all .3s;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 9%;
+      width: 82%;
+      height: 1px;
+      background: $light-black;
+
+    }
+
+    &:hover {
+      background: $green;
+    }
+
+    &:active {
+      background: $dark-green;
+    }
+  }
+
+  &__button {
+    margin: 10px 20px 0;
+  }
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid transparent;
+  transition: all .3s;
+
+  &--grey {
+    color: $white;
+    background: $light-black;
+
+    &:hover {
+      background: transparent;
+      color: $green;
+      border: 1px solid $green;
+    }
+
+    &:active {
+      background: transparent;
+      color: $dark-green;
+      border: 1px solid $dark-green;
+    }
+  }
+}
+
+/*****--------------------header-----------------*****/
+@media only screen and (max-width: 1200px) {
+  .header {
+    .menu-burger {
+      &--small {
+        display: block;
+      }
+    }
+
+    .top-menu {
+      display: none;
+
+      &__link {}
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    &__inner {}
+
+    &__logo {}
+
+    &__top-menu {}
+
+    &__menu-logo {}
+
+    &__menu-burger {}
+  }
+
+  .menu-burger {
+    &--small {}
+  }
+
+  .logo {}
+
+  .top-menu {
+    &__link {}
+  }
+
+  .menu-logo {
+    &__link {
+      &--user {
+        padding-right: 40px;
+      }
+    }
+
+    &__icon {
+      &--user {}
+
+      &--heart {}
+
+      &--bag {}
+    }
+
+    &__wrapper {
+      display: none;
+    }
+
+    &__nr {}
+  }
+
+  .personal-menu {
+    &__trigger {}
+
+    &__link {}
+
+    &__button {}
+  }
+
+  .button {
+    &--grey {}
+  }
+
+  .flex-wrapper {
+    &--column {}
+  }
+
+  .user {}
+}
+
+@media only screen and (max-width: 550px) {
+  .header {
+    &__inner {}
+
+    &__logo {}
+
+    &__top-menu {}
+
+    &__menu-logo {}
+
+    &__menu-burger {}
+  }
+
+  .menu-burger {
+    &--small {}
+  }
+
+  .logo {}
+
+  .top-menu {
+    &__link {}
+  }
+
+  .menu-logo {
+    &>li:last-child {
+      margin-left: 0;
+    }
+
+    &__link {
+      &--user {
+        display: none;
+      }
+
+      &--heart {
+        display: none;
+      }
+    }
+
+    &__icon {
+      &--user {}
+
+      &--heart {}
+
+      &--bag {}
+    }
+
+    &__wrapper {}
+
+    &__nr {}
+  }
+
+  .personal-menu {
+    &__trigger {}
+
+    &__link {}
+
+    &__button {}
+  }
+
+  .button {
+    &--grey {}
+  }
+
+  .flex-wrapper {
+    &--column {}
+  }
+
+  .user {}
+}
+
+@media only screen and (max-width: 350px) {
+  .header__logo {
+    width: 150px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+/*****--------------------header-big-----------------*****/
+
+@media only screen and (max-width: 1024px) {
+
+  .header--big {
+    height: 150px;
+
+    & .menu-burger {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .header {
+    &__inner {}
+
+    &__logo2 {
+      width: 300px;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__menu-logo {}
+
+    &__menu-burger {}
+  }
+
+  .menu-burger {}
+
+  .logo2 {}
+
+  .menu-logo {
+    &__link {
+      &--user {}
+
+      &--heart {}
+    }
+
+    &__icon {
+      &--big {}
+
+      &--user {}
+
+      &--heart {}
+
+      &--bag {}
+    }
+
+    &__nr {
+      &--big {}
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .header--big {
+    height: 120px;
+
+    & .menu-burger {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .header {
+    &__inner {}
+
+    &__logo2 {
+      width: 200px;
+    }
+
+    &__menu-logo {}
+
+    &__menu-burger {}
+  }
+
+  .menu-burger {}
+
+  .logo2 {}
+
+  .menu-logo {
+    &__link {
+      &--user {}
+
+      &--heart {}
+    }
+
+    &__icon {
+      width: 20px;
+
+      &--big {
+        & svg {
+          width: 20px;
+        }
+      }
+
+      &--user {}
+
+      &--heart {}
+
+      &--bag {}
+    }
+
+    &__nr {
+      &--big {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header--big {
+    height: 100px;
+
+    & .menu-burger {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .header {
+    &__inner {}
+
+    &__logo2 {}
+
+    &__menu-logo {}
+
+    &__menu-burger {}
+  }
+
+  .menu-burger {}
+
+  .logo2 {}
+
+  .menu-logo {
+    &__link {
+      &--user {}
+
+      &--heart {}
+    }
+
+    &__icon {
+      &--big {}
+
+      &--user {}
+
+      &--heart {}
+
+      &--bag {}
+    }
+
+    &__nr {
+      &--big {}
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .header__logo2 {
+    width: 150px;
+  }
+}
+
+/*****--------------------header-big-----------------*****/
