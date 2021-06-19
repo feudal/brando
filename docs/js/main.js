@@ -72,16 +72,7 @@ $(document).ready(function() {
   });
 
   //----------------------------------------footer-menu--------------------------------------//
-  //----------------------------------------menu-burger--------------------------------------//
-  $('.menu-burger').on('click', function() {
-    $('.hidden-menu').show('400').css('display', 'flex');
-  })
-
-  $('.left-menu__close').on('click', function() {
-    $('.hidden-menu').hide('400');
-  })
-  //----------------------------------------menu-burger--------------------------------------//
-  //----------------------------------------gender--------------------------------------//
+    //----------------------------------------gender--------------------------------------//
   $('.bold-menu__gender span').on('click', function() {
     $('.bold-menu__gender').children().removeClass('active');
     $(this).addClass('active');
@@ -95,21 +86,42 @@ $(document).ready(function() {
     $('.banner__button').removeClass('active');
   })
   //----------------------------------------green-button--------------------------------------//
+  //----------------------------------------menu-burger--------------------------------------//
+  $('.menu-burger').on('click', function() {
+    $('.hidden-menu').show('400').css('display', 'flex');
+  })
+
+  $('.left-menu__close').on('click', function() {
+    $('.hidden-menu').hide('400');
+
+    //for catalog menu, close all lists
+    $('#close-catalog').click();
+    $('.menu-clother').removeClass('active');
+    $('.menu-clother__title').removeClass('active');
+    $('.menu-clother__items').removeClass('active').hide();
+  })
+  //----------------------------------------menu-burger--------------------------------------//
   //----------------------------------------catalog-menu--------------------------------------//
   $('.catalog-menu-trigger').on('click', function() {
     event.preventDefault();
-    $('.menu-clother-list--hidden').show().addClass('active');
+    if ($(window).width() < 750) {
+      $('.menu-clother-list--hidden').show().addClass('active');
+    }
   })
 
   $('.catalog-menu-close').on('click', function() {
-    $('.menu-clother-list--hidden').removeClass('active');
+    if ($(window).width() < 750) {
+      $('.menu-clother-list--hidden').removeClass('active');
+    }
   })
 
   $('.menu-clother__title').on('click', function() {
-    $(this).toggleClass('active');
-    $(this).next().toggle();
-    $(this).parent().hide().toggleClass('active').css('transform', 'translateX(120%)');
-    setTimeout(() => { $(this).parent().show().css('transform', 'translateX(0)'); }, 200);
+    if ($(window).width() < 750) {
+      $(this).toggleClass('active');
+      $(this).next().toggle();
+      $(this).parent().hide().toggleClass('active').css('transform', 'translateX(120%)');
+      setTimeout(() => { $(this).parent().show().css('transform', 'translateX(0)'); }, 200);
+    }
   })
 
   //----------------------------------------catalog-menu--------------------------------------//
