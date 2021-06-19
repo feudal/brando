@@ -75,6 +75,10 @@
 
     transition: all .3s;
 
+    &-arrow {
+      display: none;
+    }
+
     &--red {
       color: $red;
     }
@@ -131,13 +135,18 @@
   height: 50px;
   width: 100%;
   padding: 16px 20px;
-  border: 1px solid $dark-grey;
+  border: 1px solid $grey2;
 
   position: relative;
+
+  &--hidden {
+    display: none;
+  }
 
   &__input {
     width: calc(100% - 20px);
     border: none;
+    background: transparent;
   }
 
   &__submit {
@@ -216,6 +225,10 @@
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .menu-clother {
@@ -229,6 +242,10 @@
   &__title {
     text-transform: uppercase;
     font-weight: 700;
+
+    & br {
+      display: none;
+    }
   }
 
   &__items {}
@@ -292,6 +309,401 @@
       right: -20px;
     }
   }
+
+  & .slick-dots {
+    display: none !important;
+  }
+
 }
 
 /*****--------------------BRAND-SLIDER-----------------*****/
+
+/*****--------------------hidden-menu-----------------*****/
+
+
+@media only screen and (max-width: 1200px) {
+  .hidden-menu {}
+
+  .left-menu {
+    padding-top: 50px;
+
+    &__close {}
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__button {}
+  }
+
+  .bold-menu {
+    &__wrapper {}
+
+    &__gender {}
+
+    &__link {
+      margin-top: 10px;
+
+      &--red {}
+    }
+  }
+
+  .light-menu {
+    &__link {
+      margin-top: 10px;
+    }
+  }
+
+  .right-content {
+    padding: 20px;
+  }
+
+  .search-form {
+    &__input {}
+
+    &__submit {}
+  }
+
+  .banner {
+    height: 75px;
+    margin-top: 20px;
+
+    &__button {}
+  }
+
+  .menu-clother-list {
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -20px;
+  }
+
+  .menu-clother {
+    margin-top: 20px;
+    margin-right: 20px;
+    align-self: flex-start;
+
+    &__title {
+
+      //     font-size: 14px;
+      // line-height: 22px;
+      & br {
+        // display: block;
+      }
+    }
+
+    &__items {
+      //     font-size: 12px;
+      // line-height: 20px;
+    }
+
+    &__link {
+      margin-top: 0px;
+    }
+  }
+
+  .brand-slider {
+    height: 70px;
+
+    &__item {
+      height: 70px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  & button.slick-arrow {
+    left: -15px !important;
+
+    &.slick-prev {
+      left: auto !important;
+      right: -5px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hidden-menu {}
+
+  .left-menu {
+    &__close {}
+
+    &__logo {}
+
+    &__button {}
+  }
+
+  .logo {}
+
+  .bold-menu {
+    &__wrapper {}
+
+    &__gender {}
+
+    &__link {
+      &--red {}
+    }
+  }
+
+  .light-menu {
+    &__link {}
+  }
+
+  .right-content {}
+
+  .search-form {
+    &__input {}
+
+    &__submit {}
+  }
+
+  .banner {
+    &__button {}
+  }
+
+  .menu-clother-list {
+    margin-right: -5%;
+  }
+
+  .menu-clother {
+    width: 45%;
+    margin-right: 5%;
+
+    &__title {
+      & br {
+        display: block;
+      }
+    }
+
+    &__items {}
+
+    &__link {}
+  }
+
+  .brand-slider {
+    &__item {}
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hidden-menu {
+    height: 100%;
+    background: transparent;
+
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .left-menu {
+    width: 100%;
+    margin-top: 80px;
+    height: calc(100% + 80px);
+    padding-top: 20px;
+    background: $white;
+
+    &__close {
+      position: absolute;
+      background-color: $black;
+      background-image: url(../img/icons/close.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      height: 80px;
+      width: 40px;
+      top: -80px;
+      left: 15px;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__button {}
+  }
+
+  .logo {}
+
+  .bold-menu {
+    &__wrapper {}
+
+    &__gender {
+      background: $grey1;
+      padding: 15px 20px;
+      position: relative;
+      left: -20px;
+      width: calc(100% + 40px);
+    }
+
+    &__link {
+      margin: 0;
+      padding: 10px 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-arrow {
+        display: block;
+        height: 15px;
+        width: 8px;
+
+        background: url(../img/icons/little-arrow.svg) no-repeat center center;
+      }
+
+      & span {
+        display: inline-block;
+      }
+
+      &--red {}
+    }
+  }
+
+  .light-menu {
+    margin-top: 20px;
+
+    &__link {}
+  }
+
+  .right-content {
+    display: none;
+  }
+
+  .search-form {
+    &--hidden {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__input {}
+
+    &__submit {}
+  }
+
+  /*****--------------------menu-catalog-----------------*****/
+
+  .menu-clother-list {
+    &--hidden {
+      display: none;
+      position: absolute;
+      background: $white;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 120;
+
+      transition: all .3s;
+      transform: translate(120%);
+    }
+
+    &.active {
+      transform: translate(0);
+    }
+
+    &__title {
+      background: $grey1;
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      padding: 15px 20px;
+      margin-top: 20px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        transform: rotate(180deg);
+
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background: url(../img/icons/little-arrow.svg) no-repeat center center;
+      }
+    }
+  }
+
+  .menu-clother {
+    margin: 0;
+    width: 100%;
+    transition: all .3s;
+
+    &.active {
+      position: absolute;
+      background: $white;
+      z-index: 200;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+    }
+
+    &__title {
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.active {
+        background: $grey1;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        &::after {
+          transform: rotate(180deg);
+          margin-right: 20px;
+        }
+      }
+
+      & br {
+        display: none;
+      }
+
+      &::after {
+        content: '';
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 12px;
+        background: url(../img/icons/little-arrow.svg) no-repeat center center;
+      }
+
+    }
+
+    &__items {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &__link {
+      padding: 10px 20px;
+      font-weight: 700;
+    }
+  }
+
+  .brand-slider {
+    &__item {}
+  }
+
+  /*****--------------------menu-catalog-----------------*****/
+}
+
+
+/*****--------------------hidden-menu-----------------*****/

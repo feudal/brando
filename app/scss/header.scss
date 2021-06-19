@@ -1,6 +1,7 @@
 /*****--------------------header-----------------*****/
 .header {
   position: fixed;
+  z-index: 10;
   height: 80px;
   width: 100%;
   background: $black;
