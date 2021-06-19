@@ -1,3 +1,297 @@
-body {
-	
+.hidden-menu {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 100;
+
+  background: $white;
+  display: flex;
+  display: none;
 }
+
+.left-menu {
+  background: $grey1;
+  width: 300px;
+  padding: 70px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__close {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icons/close.svg) no-repeat center center;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__button {
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+}
+
+.logo {}
+
+.bold-menu {
+  &__wrapper {}
+
+  &__gender {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+
+    & .active {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 20px;
+    display: block;
+
+    transition: all .3s;
+
+    &--red {
+      color: $red;
+    }
+
+    &:hover {
+      color: $green;
+    }
+
+    &:active {
+      color: $dark-green;
+    }
+  }
+}
+
+.active {}
+
+.women {}
+
+.light-menu {
+  &__link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: block;
+    margin-top: 20px;
+    transition: all .3s;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:active {
+      color: $dark-green;
+    }
+  }
+}
+
+.right-content {
+  padding: 40px;
+  width: calc(100% - 300px);
+  display: flex;
+  flex-direction: column;
+}
+
+/*****--------------------search-form-----------------*****/
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid $dark-grey;
+
+  position: relative;
+
+  &__input {
+    width: calc(100% - 20px);
+    border: none;
+  }
+
+  &__submit {
+    cursor: pointer;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    background: url(../img/icons/loupe.svg) no-repeat center center;
+  }
+}
+
+/*****--------------------search-form-----------------*****/
+/*****--------------------banner-----------------*****/
+.banner {
+  height: 200px;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__button {
+    height: 60px;
+    width: 214px;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 30px);
+
+    display: flex;
+    justify-content: flex-end;
+
+    background: transparent;
+    color: transparent;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 30px;
+      width: 40px;
+      height: 10px;
+      background: url(../img/icons/white-arrow.svg) no-repeat center center;
+    }
+
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+      right: 40px;
+      justify-content: center;
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    &.active {
+      background: $green;
+      border: 1px solid $green;
+    }
+
+  }
+}
+
+.button {}
+
+/*****--------------------banner-----------------*****/
+/*****--------------------menus-clothers-----------------*****/
+.menu-clother-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-clother {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__items {}
+
+  &__link {
+    margin-top: 20px;
+    display: block;
+    transition: all .3s;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:active {
+      color: $dark-green;
+    }
+  }
+}
+
+.menus-clother {}
+
+/*****--------------------menus-clothers-----------------*****/
+/*****--------------------BRAND-SLIDER-----------------*****/
+.brand-slider {
+  width: 100%;
+  margin-top: auto;
+  align-self: flex-end;
+  margin-right: -10px;
+  position: relative;
+
+  &__item {
+    width: 250px;
+    height: 100px;
+    padding-right: 10px;
+
+    & img {
+      background: $grey1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & button.slick-arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: none;
+    background: url(../img/icons/Arrow.svg) no-repeat center center;
+    font-size: 0;
+
+    position: absolute;
+    z-index: 10;
+    top: calc(50% - 15px);
+    left: -30px;
+    transform: rotate(180deg);
+
+    &.slick-prev {
+      transform: rotate(360deg);
+      left: auto;
+      right: -20px;
+    }
+  }
+}
+
+/*****--------------------BRAND-SLIDER-----------------*****/

@@ -235,7 +235,7 @@
   cursor: pointer;
   width: 100%;
   height: 50px;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -261,6 +261,26 @@
       background: transparent;
       color: $dark-green;
       border: 1px solid $dark-green;
+    }
+  }
+
+  &--green {
+    background: $green;
+    color: $white;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: all .3s;
+
+    &:hover {
+      background: $middle-green;
+    }
+    &:active {
+      background: $middle-green;
     }
   }
 }

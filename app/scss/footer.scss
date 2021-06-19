@@ -176,6 +176,15 @@
     line-height: 26px;
     margin-bottom: 10px;
     display: block;
+    transition: all .3s;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:active {
+      color: $green;
+    }
   }
 }
 
@@ -332,6 +341,7 @@
 
     &__list {
       display: none;
+
       &--show {
         display: flex !important;
         flex-direction: column;
@@ -517,6 +527,7 @@
 
     &__list {
       display: none;
+
       &--show {
         height: auto;
       }

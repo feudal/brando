@@ -4,14 +4,14 @@
   font-family: 'Geometria';
   font-style: normal;
   font-weight: normal;
-  src: local('../fonts/Geometria'), url('Geometria.woff') format('woff');
+  src: local('Geometria'), url('../fonts/Geometria.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Geometria-Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('../fonts/Geometria-Medium'), url('Geometria-Medium.woff') format('woff');
+  src: local('Geometria-Medium'), url('../fonts/Geometria-Medium.woff') format('woff');
 }
 
 
@@ -19,5 +19,5 @@
   font-family: 'Geometria-Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('../fonts/Geometria-Bold'), url('Geometria-Bold.woff') format('woff');
+  src: local('Geometria-Bold'), url('../fonts/Geometria-Bold.woff') format('woff');
 }
