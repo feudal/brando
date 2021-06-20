@@ -12,43 +12,267 @@
 </head>
 
 <body>
-  <header class="header header--big">
+  <div class="hidden-menu">
+  <!--                         left-menu                         -->
+  <div class="left-menu">
+    <div class="menu-clother-list menu-clother-list--hidden">
+      <h2 class="menu-clother-list__title catalog-menu-close" id="close-catalog">Каталог</h2>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Обувь</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Ботильоны</a></li>
+          <li><a href="" class="menu-clother__link">Ботинки</a></li>
+          <li><a href="" class="menu-clother__link">Кроссовки</a></li>
+          <li><a href="" class="menu-clother__link">Сапоги</a></li>
+          <li><a href="" class="menu-clother__link">Туфли</a></li>
+          <li><a href="" class="menu-clother__link">Вся обувь</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Сумки</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Багаж</a></li>
+          <li><a href="" class="menu-clother__link">Клатчи</a></li>
+          <li><a href="" class="menu-clother__link">Кошельки</a></li>
+          <li><a href="" class="menu-clother__link">Поясные сумки</a></li>
+          <li><a href="" class="menu-clother__link">Рюкзаки</a></li>
+          <li><a href="" class="menu-clother__link">Спортивные сумки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки для ноутбука</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Одежда</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Брюки</a></li>
+          <li><a href="" class="menu-clother__link">Верхняя одежда</a></li>
+          <li><a href="" class="menu-clother__link">Джемперы и свитеры</a></li>
+          <li><a href="" class="menu-clother__link">Джинсы</a></li>
+          <li><a href="" class="menu-clother__link">Кардиганы и кофты</a></li>
+          <li><a href="" class="menu-clother__link">Платья</a></li>
+          <li><a href="" class="menu-clother__link">Трикотаж</a></li>
+          <li><a href="" class="menu-clother__link">Юбки</a></li>
+          <li><a href="" class="menu-clother__link">Вся одежда</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Аксессуары</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Головные уборы</a></li>
+          <li><a href="" class="menu-clother__link">Другие аксессуары</a></li>
+          <li><a href="" class="menu-clother__link">Защитные маски</a></li>
+          <li><a href="" class="menu-clother__link">Очки и оправы</a></li>
+          <li><a href="" class="menu-clother__link">Ремни и подтяжки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки и рюкзаки</a></li>
+          <li><a href="" class="menu-clother__link">Украшения</a></li>
+          <li><a href="" class="menu-clother__link">Часы</a></li>
+          <li><a href="" class="menu-clother__link">Все аксессуары</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Уходовая <br>косметика</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Для одежды</a></li>
+          <li><a href="" class="menu-clother__link">Для обуви</a></li>
+          <li><a href="" class="menu-clother__link">Для аксессуаров</a></li>
+        </ul>
+      </div>
+    </div>
+    <form class="search-form search-form--hidden">
+      <input type="text" class="search-form__input" placeholder="Поиск">
+      <input type="submit" class="search-form__submit" value="">
+    </form>
+    <div class="left-menu__close"></div>
+    <div class="left-menu__logo logo"><img src="img/logo.png" alt=""></div>
+    <div class="bold-menu__wrapper">
+      <div class="bold-menu__gender">
+        <span class="bold-menu__gender-women active">Женщинам</span>
+        <span class="bold-menu__gender-men">Мужчинам</span>
+      </div>
+      <ul class="bold-menu women">
+        <li><a href="" class="bold-menu__link catalog-menu-trigger">Каталог <span class="bold-menu__link-arrow"></span></a> </li>
+        <li><a href="" class="bold-menu__link">О нас <span class="bold-menu__link-arrow"></span></a> </li>
+        <li><a href="" class="bold-menu__link">Скидки <span class="bold-menu__link-arrow"></span></a> </li>
+        <li><a href="" class="bold-menu__link">Новинки <span class="bold-menu__link-arrow"></span></a> </li>
+        <li><a href="" class="bold-menu__link bold-menu__link--red">Акции <span class="bold-menu__link-arrow"></span></a> </li>
+        <li><a href="" class="bold-menu__link">Контакты <span class="bold-menu__link-arrow"></span></a> </li>
+      </ul>
+    </div>
+    <ul class="light-menu">
+      <li><a href="" class="light-menu__link">Размерная сетка</a></li>
+      <li><a href="" class="light-menu__link">Условия возврата и обмена</a></li>
+      <li><a href="" class="light-menu__link">Политика конфиденциальности</a></li>
+      <li><a href="" class="light-menu__link">Способы оплаты</a></li>
+      <li><a href="" class="light-menu__link">Способы доставки</a></li>
+      <li><a href="" class="light-menu__link">Самовывоз Красноярск</a></li>
+      <li><a href="" class="light-menu__link">Партнеры</a></li>
+      <li><a href="" class="light-menu__link">Юридический раздел</a></li>
+      <li><a href="" class="light-menu__link">Полезная информация</a></li>
+    </ul>
+    <a href="#" class="left-menu__button button button--green">Связаться с нами </a>
+  </div>
+  <!--                         left-menu                         -->
+  <!--                         right-content                         -->
+  <div class="right-content">
+    <!--                         search-form                         -->
+    <form class="search-form">
+      <input type="text" class="search-form__input" placeholder="Поиск">
+      <input type="submit" class="search-form__submit" value="">
+    </form>
+    <!--                         search-form                         -->
+    <!--                         banner                         -->
+    <div class="banner">
+      <button class="banner__button button">Перейти в раздел</button>
+      <img src="img/banner.jpg" alt="">
+    </div>
+    <!--                         banner                         -->
+    <!--                         menu-clother                         -->
+    <div class="menu-clother-list">
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Обувь</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Ботильоны</a></li>
+          <li><a href="" class="menu-clother__link">Ботинки</a></li>
+          <li><a href="" class="menu-clother__link">Кроссовки</a></li>
+          <li><a href="" class="menu-clother__link">Сапоги</a></li>
+          <li><a href="" class="menu-clother__link">Туфли</a></li>
+          <li><a href="" class="menu-clother__link">Вся обувь</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Сумки</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Багаж</a></li>
+          <li><a href="" class="menu-clother__link">Клатчи</a></li>
+          <li><a href="" class="menu-clother__link">Кошельки</a></li>
+          <li><a href="" class="menu-clother__link">Поясные сумки</a></li>
+          <li><a href="" class="menu-clother__link">Рюкзаки</a></li>
+          <li><a href="" class="menu-clother__link">Спортивные сумки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки для ноутбука</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Одежда</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Брюки</a></li>
+          <li><a href="" class="menu-clother__link">Верхняя одежда</a></li>
+          <li><a href="" class="menu-clother__link">Джемперы и свитеры</a></li>
+          <li><a href="" class="menu-clother__link">Джинсы</a></li>
+          <li><a href="" class="menu-clother__link">Кардиганы и кофты</a></li>
+          <li><a href="" class="menu-clother__link">Платья</a></li>
+          <li><a href="" class="menu-clother__link">Трикотаж</a></li>
+          <li><a href="" class="menu-clother__link">Юбки</a></li>
+          <li><a href="" class="menu-clother__link">Вся одежда</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Аксессуары</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Головные уборы</a></li>
+          <li><a href="" class="menu-clother__link">Другие аксессуары</a></li>
+          <li><a href="" class="menu-clother__link">Защитные маски</a></li>
+          <li><a href="" class="menu-clother__link">Очки и оправы</a></li>
+          <li><a href="" class="menu-clother__link">Ремни и подтяжки</a></li>
+          <li><a href="" class="menu-clother__link">Сумки и рюкзаки</a></li>
+          <li><a href="" class="menu-clother__link">Украшения</a></li>
+          <li><a href="" class="menu-clother__link">Часы</a></li>
+          <li><a href="" class="menu-clother__link">Все аксессуары</a></li>
+        </ul>
+      </div>
+      <div class="menu-clother">
+        <h3 class="menu-clother__title">Уходовая <br>косметика</h3>
+        <ul class="menu-clother__items">
+          <li><a href="" class="menu-clother__link">Для одежды</a></li>
+          <li><a href="" class="menu-clother__link">Для обуви</a></li>
+          <li><a href="" class="menu-clother__link">Для аксессуаров</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--                         menu-clother                         -->
+    <!--                         brand-slider                         -->
+    <div class="brand-slider">
+      <div class="brand-slider__item">
+        <img src="img/s1.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s2.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s3.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s4.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s5.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s6.png" alt="">
+      </div>
+      <div class="brand-slider__item">
+        <img src="img/s3.png" alt="">
+      </div>
+    </div>
+    <!--                         brand-slider                         -->
+  </div>
+  <!--                         right-content                         -->
+</div>
+  <header class="header">
   <div class="header__inner">
-    <div class="header__menu-burger menu-burger"><img src="img/icons/menu-burger.svg" alt=""></div>
-    <div class="header__logo2 logo2"><img src="img/logo2.png" alt=""></div>
+    <div class="header__menu-burger menu-burger menu-burger--small"><img src="img/icons/menu-burger.svg" alt=""></div>
+    <a href="index.html" class="header__logo logo"><img src="img/logo.png" alt=""></a >
+    <ul class="header__top-menu top-menu">
+      <li><a href="" class="top-menu__link">Каталог</a></li>
+      <li><a href="" class="top-menu__link">О нас</a></li>
+      <li><a href="" class="top-menu__link">Акции</a></li>
+      <li><a href="" class="top-menu__link">Контакты</a></li>
+    </ul>
     <ul class="header__menu-logo menu-logo">
       <li class='personal-menu__trigger'>
+        <ul class="personal-menu">
+          <li><a href="" class="personal-menu__link">Мой профиль</a></li>
+          <li><a href="" class="personal-menu__link">Активные заказы</a></li>
+          <li><a href="" class="personal-menu__link">Завершенные заказы</a></li>
+          <li><a href="" class="personal-menu__link">Отложенные заказы</a></li>
+          <li><a href="" class="personal-menu__link">Избранное</a></li>
+          <li><button class="personal-menu__button button button--grey">Выйти</button></li>
+        </ul>
         <a class="menu-logo__link menu-logo__link--user">
-          <span class="menu-logo__icon menu-logo__icon--big menu-logo__icon--user">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="menu-logo__icon menu-logo__icon--user">
+            <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20.0008 22.5304C7.98227 22.5304 1.36328 28.216 1.36328 38.5401C1.36328 39.3465 2.0168 40 2.82313 40H37.1784C37.9847 40 38.6382 39.3465 38.6382 38.5401C38.6383 28.2165 32.0193 22.5304 20.0008 22.5304ZM4.33609 37.0803C4.91031 29.3611 10.173 25.4501 20.0008 25.4501C29.8285 25.4501 35.0913 29.3611 35.666 37.0803H4.33609Z" fill="white" />
               <path d="M20.0001 0C14.4794 0 10.3164 4.24672 10.3164 9.87789C10.3164 15.674 14.6605 20.3888 20.0001 20.3888C25.3397 20.3888 29.6838 15.674 29.6838 9.87836C29.6838 4.24672 25.5208 0 20.0001 0ZM20.0001 17.4696C16.2702 17.4696 13.2361 14.0642 13.2361 9.87836C13.2361 5.84625 16.0809 2.91969 20.0001 2.91969C23.8566 2.91969 26.7641 5.91094 26.7641 9.87836C26.7641 14.0642 23.73 17.4696 20.0001 17.4696Z" fill="white" />
             </svg>
           </span>
+          <div class="menu-logo__wrapper flex-wrapper flex-wrapper--column">
+            <span>Личный кабинет</span>
+            <span class="user">Анастасии Игоревны</span>
+          </div>
         </a>
       </li>
       <li>
         <a href="" class="menu-logo__link menu-logo__link--heart">
-          <span class="menu-logo__icon menu-logo__icon--big menu-logo__icon--heart">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M36.7289 4.90935C34.6599 2.68551 31.7608 1.42018 28.7233 1.41549C25.6835 1.419 22.7813 2.68367 20.7091 4.90793L20.0029 5.65418L19.2967 4.90793C15.185 0.482609 8.26429 0.22847 3.83906 4.34018C3.64297 4.52245 3.45358 4.71175 3.27131 4.90793C-1.09044 9.6126 -1.09044 16.8835 3.27131 21.5881L18.9651 38.1382C19.5081 38.7114 20.4129 38.736 20.9861 38.193C21.0048 38.1753 21.0231 38.157 21.0408 38.1382L36.7289 21.5881C41.0904 16.884 41.0904 9.61352 36.7289 4.90935ZM34.6603 19.6196H34.6589L20.0029 35.0775L5.34563 19.6196C2.01351 16.0248 2.01351 10.4698 5.34563 6.87504C8.37159 3.59535 13.4834 3.38971 16.7631 6.41567C16.9224 6.5626 17.0756 6.7158 17.2225 6.87504L18.9651 8.71348C19.5394 9.28408 20.4666 9.28408 21.0408 8.71348L22.7835 6.87646C25.8094 3.59678 30.9213 3.39114 34.201 6.4171C34.3602 6.56402 34.5134 6.71722 34.6603 6.87646C38.0214 10.477 38.046 16.042 34.6603 19.6196Z" fill="white" />
+          <span class="menu-logo__icon menu-logo__icon--heart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0373 2.94558C20.7959 1.61128 19.0565 0.852075 17.234 0.849261C15.4101 0.851372 13.6688 1.61017 12.4255 2.94473L12.0018 3.39248L11.578 2.94473C9.11101 0.289535 4.95858 0.137052 2.30343 2.60408C2.18578 2.71344 2.07215 2.82702 1.96278 2.94473C-0.654261 5.76753 -0.654261 10.13 1.96278 12.9528L11.3791 22.8829C11.7048 23.2268 12.2477 23.2416 12.5916 22.9158C12.6029 22.9051 12.6139 22.8942 12.6245 22.8829L22.0374 12.9528C24.6542 10.1303 24.6542 5.76808 22.0373 2.94558ZM20.7962 11.7717H20.7953L12.0018 21.0465L3.20738 11.7717C1.20811 9.61484 1.20811 6.28187 3.20738 4.12499C5.02296 2.15718 8.09006 2.0338 10.0579 3.84937C10.1534 3.93753 10.2453 4.02945 10.3335 4.12499L11.3791 5.22806C11.7236 5.57042 12.2799 5.57042 12.6245 5.22806L13.6701 4.12584C15.4857 2.15803 18.5528 2.03465 20.5206 3.85023C20.6161 3.93838 20.708 4.0303 20.7962 4.12584C22.8129 6.28614 22.8276 9.6252 20.7962 11.7717Z" fill="white" />
             </svg>
           </span>
-          <span class="menu-logo__nr menu-logo__nr--big">12</span></a>
+          <span class="menu-logo__nr">12</span></a>
       </li>
       <li>
         <a href="" class="menu-logo__link">
-          <span class="menu-logo__icon menu-logo__icon--big menu-logo__icon--bag">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M36.5348 38.3292L34.1008 11.2227C34.0343 10.4824 33.4139 9.91544 32.6708 9.91544H27.6513V7.6516C27.6513 3.43251 24.219 0 20.0001 0C15.7814 0 12.3495 3.43251 12.3495 7.6516V9.91544H7.32657C6.58344 9.91544 5.96302 10.4824 5.89659 11.2227L3.45301 38.4358C3.41702 38.8375 3.5514 39.2354 3.82342 39.5329C4.09544 39.8304 4.48002 39.9998 4.88298 39.9998H35.1146C35.1157 39.9998 35.1172 39.9998 35.1184 39.9998C35.9115 39.9998 36.5541 39.357 36.5541 38.5641C36.5539 38.4843 36.5474 38.4056 36.5348 38.3292ZM15.2209 7.6516C15.2209 5.01582 17.3649 2.87143 20.0003 2.87143C22.6359 2.87143 24.7801 5.01582 24.7801 7.6516V9.91544H15.2209V7.6516ZM6.45346 37.1286L8.63919 12.7869H12.3495V15.3543C12.3495 16.1472 12.9921 16.79 13.7852 16.79C14.5783 16.79 15.2209 16.1472 15.2209 15.3543V12.7869H24.7801V15.3543C24.7801 16.1472 25.4227 16.79 26.2158 16.79C27.0089 16.79 27.6515 16.1472 27.6515 15.3543V12.7869H31.3583L33.5441 37.1286H6.45346Z" fill="white" />
+          <span class="menu-logo__icon menu-logo__icon--bag">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.9209 22.9975L20.4605 6.73362C20.4206 6.28947 20.0483 5.94926 19.6025 5.94926H16.5908V4.59096C16.5908 2.05951 14.5314 0 12.0001 0C9.46884 0 7.40968 2.05951 7.40968 4.59096V5.94926H4.39594C3.95006 5.94926 3.57781 6.28947 3.53796 6.73362L2.0718 23.0615C2.05021 23.3025 2.13084 23.5413 2.29405 23.7197C2.45726 23.8982 2.68801 23.9999 2.92979 23.9999H21.0687C21.0694 23.9999 21.0703 23.9999 21.071 23.9999C21.5469 23.9999 21.9325 23.6142 21.9325 23.1385C21.9323 23.0906 21.9284 23.0434 21.9209 22.9975ZM9.13254 4.59096C9.13254 3.00949 10.4189 1.72286 12.0002 1.72286C13.5815 1.72286 14.8681 3.00949 14.8681 4.59096V5.94926H9.13254V4.59096ZM3.87208 22.2771L5.18352 7.67212H7.40968V9.21259C7.40968 9.68832 7.79526 10.074 8.27111 10.074C8.74696 10.074 9.13254 9.68832 9.13254 9.21259V7.67212H14.8681V9.21259C14.8681 9.68832 15.2536 10.074 15.7295 10.074C16.2053 10.074 16.5909 9.68832 16.5909 9.21259V7.67212H18.815L20.1264 22.2771H3.87208Z" fill="white" />
             </svg>
           </span>
-          <span class="menu-logo__nr menu-logo__nr--big">4</span></a>
+          <span class="menu-logo__nr">4</span></a>
       </li>
     </ul>
   </div>
 </header>
-  <main class="main">main</main>
+  <main class="main"></main>
   <footer class="footer">
   <div class="footer__inner">
     <div class="footer__top">

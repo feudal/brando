@@ -1,0 +1,685 @@
+/*****--------------------slider-----------------*****/
+.slider {
+  width: 100%;
+  position: relative;
+
+  line-height: 0; //to remove white line under the slider
+
+  & div {
+    height: 100%; //to make content the same hight
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+    &--big {
+      font-size: 120px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130px;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-top: 40px;
+
+  }
+
+  &__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    margin-top: 40px;
+    width: 57%;
+    height: auto !important;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &:hover .button {
+      display: flex;
+    }
+  }
+
+  &__button {
+    display: none;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 107px);
+    width: 214px;
+  }
+
+  /*****--------------------interior-elements-----------------*****/
+
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+
+
+    & button {
+      width: 14px;
+      height: 14px;
+      background: $white;
+      border: 2px solid $white;
+      border-radius: 50%;
+      font-size: 0;
+
+      margin: 0 15px;
+
+    }
+
+    & .slick-active button {
+      background: transparent;
+    }
+  }
+}
+
+.slider1 {
+  height: 900px;
+}
+
+.slider2 {
+  height: 1080px;
+}
+
+/*****--------------------slider-----------------*****/
+/*****--------------------main-card-----------------*****/
+.main-card {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+
+  color: $white;
+
+  &__container {
+    margin: 20px auto 0;
+
+  }
+
+  &__inner {
+    margin: 0 50px;
+    display: flex;
+  }
+
+  &__frame {
+    height: 100%;
+    width: 100%;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0.15em;
+    text-align: center;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+
+  }
+
+  &__items {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  &__link {
+    margin: 0 40px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+}
+
+/*****--------------------main-card-----------------*****/
+
+/*****--------------------trands-----------------*****/
+.trands {
+  &__container {
+    margin: 0 auto 20px;
+  }
+
+  &__inner {
+    margin: 0 50px;
+    display: flex;
+  }
+
+  &__frame {
+    width: 70%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 36px;
+  }
+
+  &__button {
+  	cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url(../img/icons/arrow.svg) no-repeat center center;
+
+    margin-top: 20px;
+  }
+}
+
+/*****--------------------trands-----------------*****/
+
+/*****--------------------media-----------------*****/
+/*****--------------------slider-----------------*****/
+@media only screen and (max-width: 1024px) {
+  .slider {
+    height: calc(100vh - 80px);
+
+    &__title {
+      &--big {
+        font-size: 100px;
+        line-height: 110px;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 200px;
+    }
+
+    &__text {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .slider {
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+
+      &--big {
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 200px;
+    }
+
+    &__text {
+      width: 80%;
+      font-size: 18px;
+      line-height: 34px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .slider {
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+
+      &--big {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+
+    &__subtitle {}
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+
+/*****--------------------slider-----------------*****/
+/*****--------------------main-card-----------------*****/
+@media only screen and (max-width: 1450px) {
+  .main-card {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    &__link {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-card {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &__link {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-card {
+    width: 100%;
+
+    &__container {
+      margin: 20px auto 20px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      margin: 0 20px;
+    }
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 30px;
+      line-height: 46px;
+    }
+
+    &__link {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-card {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__link {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-card {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    &__link {
+      margin: 0 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .main-card {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    &__list {}
+
+    &__items {
+      font-size: 16px;
+      line-height: 36px;
+    }
+
+    &__link {
+      margin: 0 10px;
+    }
+  }
+
+}
+
+/*****--------------------main-card-----------------*****/
+/*****--------------------trand-----------------*****/
+@media only screen and (max-width: 1400px) {
+  .trands {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {
+      width: 65%;
+    }
+
+    &__content {
+      padding-left: 80px;
+    }
+
+    &__title {
+      font-size: 46px;
+      line-height: 56px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .trands {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {
+      width: 65%;
+    }
+
+    &__content {
+      width: 35%;
+      padding-left: 40px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .trands {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {
+      width: 60%;
+    }
+
+    &__content {
+      width: 40%;
+      padding-left: 20px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 44px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trands {
+    &__container {}
+
+    &__inner {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__frame {
+      width: 100%;
+    }
+
+    &__content {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+
+      & br {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 34px;
+      text-align: center;
+    }
+    &__button {
+    	margin: 20px auto 0;
+    }
+  } 
+
+}
+
+@media only screen and (max-width: 420px) {
+  .trands {
+    &__container {}
+
+    &__inner {}
+
+    &__frame {}
+
+    &__content {}
+
+    &__title {
+      font-size: 26px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+/*****--------------------trand-----------------*****/
+
+/*****--------------------media-----------------*****/
