@@ -75,7 +75,7 @@ $(document).ready(function() {
   });
 
   //----------------------------------------footer-menu--------------------------------------//
-    //----------------------------------------gender--------------------------------------//
+  //----------------------------------------gender--------------------------------------//
   $('.bold-menu__gender span').on('click', function() {
     $('.bold-menu__gender').children().removeClass('active');
     $(this).addClass('active');
@@ -128,5 +128,69 @@ $(document).ready(function() {
   })
 
   //----------------------------------------catalog-menu--------------------------------------//
+  //----------------------------------------filters--------------------------------------//
+  $('.filter__title').on('click', function() {
+    if ($(this).next().is(":visible")) {
+      $(this).next().slideUp();
+    } else {
+      $('.filter__list').slideUp();
+      $(this).next().slideDown();
+    }
+  })
+
+  $(".checkbox").change(function() {
+    if (this.checked) { //if is checked
+      val = $(this).parent().parent().parent().prev().children().text();
+
+      if (val != 0 && val != "") {
+        val = Number(val) + 1;
+      } else {
+        val = 1;
+      }
+      $(this).parent().parent().parent().prev().children().text(val);
+      tag = $(this).parent().parent().text();
+      $('.filter__tags').append("<div class=\"filter__tag\">" + tag + "</div>");
+      hideTag();
+
+    } else { //if is not checked
+      val = $(this).parent().parent().parent().prev().children().text();
+      if (val != 0 && val != "") {
+        val = Number(val) - 1;
+      }
+      if (val <= 0) { val = '' };
+      $(this).parent().parent().parent().prev().children().text(val);
+
+      //when uncheck delete tag
+      span_text = $(this).next().next().text();
+      d_tags = $('.filter__tags').children();
+
+      for (var i = 0; i < d_tags.length; i++) {
+        if($.trim(($(d_tags[i]).text())) == span_text) {
+          $(d_tags[i]).hide();
+        }
+      } 
+    }
+  });
+
+  function hideTag() {
+    $('.filter__tag').on('click', function() {
+      tag = $(this).text();
+       span = 'span:contains('+$.trim(tag)+')';
+      $(span).prev().prev().prop('checked', false);//uncheck checkbox
+      $(this).hide();//hide element
+
+
+      val = $(span).parent().parent().parent().prev().children().text();
+      if (val != 0 && val != "") {
+        val = Number(val) - 1;
+      }
+      if (val <= 0) { val = '' };
+      $(span).parent().parent().parent().prev().children().text(val);
+    })
+  }
+  hideTag();
+
+
+  //----------------------------------------filters--------------------------------------//
 
 });

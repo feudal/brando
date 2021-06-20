@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+  <title>Brando</title>
+</head>
+
+<body>
+  @@include('./components/hidden-menu.html')
+  @@include('./components/header.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__line">-</span>
+        <a href="" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__line">-</span>
+        <span class="breadcrumbs__span">Обувь</span>
+      </div>
+      <!--                         breadcrumbs                          -->
+      <!--                         page-title                         -->
+      <h1 class="page-title">Обувь</h1>
+      <!--                         page-title                         -->
+      <!--                         filters                         -->
+      @@include('./components/filters.html')
+      <!--                         filters                         -->
+    </div>
+  </main>
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

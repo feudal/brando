@@ -273,186 +273,642 @@
   </div>
 </header>
   <main class="main">
-    <!--                         slider1                         -->
-    <div class="slider__wrapper">
-      <ul class="slider slider1">
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__line">-</span>
+        <a href="" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__line">-</span>
+        <span class="breadcrumbs__span">Обувь</span>
+      </div>
+      <!--                         breadcrumbs                          -->
+      <!--                         page-title                         -->
+      <h1 class="page-title">Обувь</h1>
+      <!--                         page-title                         -->
+      <!--                         filters                         -->
+      <div class="filters">
+  <div class="filters__wrapper">
+    <div class="filter">
+      <div class="filter__title" id="type">Тип товара <span class="filter__title-selected"></span></div>
+      <ul class="filter__list">
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <div class="filter__item-title">Обувь</div>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Ботильоны</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Ботинки</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Кроссовки</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Сапоги</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title slider__title--big">Новая<br>коллекция</h2>
-            <h3 class="slider__subtitle">весна 2021</h3>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Туфли</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Вся обувь</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <div class="filter__item-title">Сумки</div>
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Багаж</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Клатчи</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Кошельки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Поясные сумки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Рюкзаки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Спортивные сумки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Сумки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Сумки для ноутбука</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <div class="filter__item-title">Одежда</div>
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Брюки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Верхняя одежда</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Джемперы и свитеры</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Джинсы</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Кардиганы и кофты</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Платья</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Трикотаж</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Юбки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Вся одежда</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <div class="filter__item-title">Аксессуары</div>
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Головные уборы</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Другие аксессуары</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Защитные маски</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Очки и оправы</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Ремни и подтяжки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Сумки и рюкзаки</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Украшения</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Часы</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Все аксессуары</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <div class="filter__item-title">Уходовая косметика</div>
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Для одежды</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Для обуви</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Для аксессуаров</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
       </ul>
-      <a href="" class="slider__button button button--green">Перейти в каталог</a>
     </div>
-    <!--                         slider1                         -->
-    <!--                         main-card                         -->
-    <div class="main-card__container">
-      <div class="main-card__inner">
-        <div class="main-card">
-          <div class="main-card__frame"><img src="img/women-colection.jpg" alt=""></div>
-          <div class="main-card__content">
-            <h3 class="main-card__title">Женская <br>коллекция</h3>
-            <ul class="main-card__list">
-              <li class="main-card__items"><a href="" class="main-card__link">Обувь</a><span>|</span></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Сумки</a><span>|</span></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Одежда</a></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Верхняя одежда</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-card">
-          <div class="main-card__frame"><img src="img/men-colection.jpg" alt=""></div>
-          <div class="main-card__content">
-            <h3 class="main-card__title">Мужская <br>коллекция</h3>
-            <ul class="main-card__list">
-              <li class="main-card__items"><a href="" class="main-card__link">Обувь</a><span>|</span></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Сумки</a><span>|</span></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Одежда</a></li>
-              <li class="main-card__items"><a href="" class="main-card__link">Верхняя одежда</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="filter">
+      <div class="filter__title" id="size">Размер <span class="filter__title-selected"></span></div>
+      <ul class="filter__list">
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>35</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>36</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>37</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>38</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>39</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>40</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>42</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>43</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+      </ul>
     </div>
-    <!--                         main-card                         -->
-    <!--                         trands                         -->
-    <div class="trands__container">
-      <div class="trands__inner">
-        <div class="trands__frame"><img src="img/trands.jpg" alt=""></div>
-        <div class="trands__content">
-          <h3 class="trands__title">Тренды <br>Сезона</h3>
-          <div class="trands__text">Мода циклична, а модные тенденции часто делают “круг почета”. Вот и сапоги-чулки и ботфорты вновь маршировали по всем Неделям моды -
-            вдохновение для осенне-зимних образов можно черпать у Saint Laurent и Valentino </div>
-          <a href="#" class="trands__button">
-            <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="black" />
-            </svg>
-          </a>
-        </div>
-      </div>
+    <div class="filter">
+      <div class="filter__title" id="sezon">Сезон<span class="filter__title-selected"></span></div>
+      <ul class="filter__list">
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Осень-зима</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Весна-лето</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+      </ul>
     </div>
-    <!--                         trands                         -->
-    <!--                         slider2                         -->
-    <div class="slider__wrapper">
-      <ul class="slider slider2">
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+    <div class="filter">
+      <div class="filter__title" id="color">Цвет <span class="filter__title-selected"></span></div>
+      <ul class="filter__list">
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>черный</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/new-colection.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>голубой</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>серый</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>зеленый</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>бордовый</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-        <li class="slider__item">
-          <img src="img/women.jpg" alt="">
-          <div class="slider__content">
-            <h2 class="slider__title">Заголовок</h2>
-            <div class="slider__text">
-              <p>Мода циклична, а модные тенденции часто делают
-                “круг почета”. Вот и сапоги-чулки и ботфорты вновь
-                маршировали по всем Неделям моды -
-                вдохновение для осенне-зимних образов можно
-                черпать у Saint Laurent и Valentino </p>
-            </div>
-          </div>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>синий</span>
+          </label>
+          <!--                         checkbox                         -->
         </li>
-      </ul> <a href="" class="slider__button button button--green">Перейти в каталог</a>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>оливковый</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>фиолетовый</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>красный</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>серебряный</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>белый</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>желтый</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+      </ul>
     </div>
-    <!--                         slider2                         -->
+    <div class="filter">
+      <div class="filter__title" id="brend">Бренд <span class="filter__title-selected"></span></div>
+      <ul class="filter__list">
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Alpina</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Al.Dell'acqua</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Anacapri</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Alpina</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Al.Dell'acqua</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+        <li class="filter__item">
+          <!--                         checkbox                         -->
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-fake"></span>
+            <span>Anacapri</span>
+          </label>
+          <!--                         checkbox                         -->
+        </li>
+      </ul>
+    </div>
+    <button class="filter__button"> <span>Все фильтры</span>
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 5.71429H5.71429V10H4.28571V5.71429H0V4.28571H4.28571V0H5.71429V4.28571H10V5.71429Z" fill="white" />
+      </svg>
+    </button>
+  </div>
+  <div class="filter__tags">
+  </div>
+</div>
+      <!--                         filters                         -->
+    </div>
   </main>
   <footer class="footer">
   <div class="footer__inner">
