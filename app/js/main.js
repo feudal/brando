@@ -39,6 +39,49 @@ $(document).ready(function() {
     dots: true,
     arrows: false
   });
+  //----------------------------------------card-slider--------------------------------------//
+  $('.card').on('mouseenter', function() {
+    if ($(window).width() > 1024) {
+      card__slider = $(this).find('.card__slider');
+      $(card__slider).slick({
+        dots: true,
+        arrows: true
+      });
+
+      ul = $(this).find('.card__info-size');
+      $(ul).addClass('active');
+      ul_height = $(ul).height();
+
+      $(card__slider).height($(card__slider).height() - ul_height);
+    }
+  })
+
+  $('.card').on('mouseleave', function() {
+    if ($(window).width() > 1024) {
+      card__slider = $(this).find('.card__slider');
+      $(card__slider).slick("unslick");
+
+      ul_height = $(this).find('.card__info-size').height();
+      $(card__slider).height($(card__slider).height() + ul_height);
+
+      ul = $(this).find('.card__info-size');
+      $(ul).removeClass('active');
+    }
+  })
+
+  // cards = $('.card')
+  // for (var i = cards.length - 1; i >= 0; i--) {
+  //   h = $(cards[0]).width();
+  //   console.log($(cards[i]).width());
+  //   if ($(cards[i]).width() > h) {
+  //     console.log('max ' + $(cards[i]).width());
+  //     $(cards[i]).width(h).css('flex-grow', '0');
+  //   }
+  // }
+
+  //----------------------------------------card-slider--------------------------------------//
+
+
   //----------------------------------------slider--------------------------------------//
   //----------------------------------------personal-menu--------------------------------------//
   $('.personal-menu__trigger').on('mouseover', function() {
@@ -165,19 +208,19 @@ $(document).ready(function() {
       d_tags = $('.filter__tags').children();
 
       for (var i = 0; i < d_tags.length; i++) {
-        if($.trim(($(d_tags[i]).text())) == span_text) {
+        if ($.trim(($(d_tags[i]).text())) == span_text) {
           $(d_tags[i]).hide();
         }
-      } 
+      }
     }
   });
 
   function hideTag() {
     $('.filter__tag').on('click', function() {
       tag = $(this).text();
-       span = 'span:contains('+$.trim(tag)+')';
-      $(span).prev().prev().prop('checked', false);//uncheck checkbox
-      $(this).hide();//hide element
+      span = 'span:contains(' + $.trim(tag) + ')';
+      $(span).prev().prev().prop('checked', false); //uncheck checkbox
+      $(this).hide(); //hide element
 
 
       val = $(span).parent().parent().parent().prev().children().text();
@@ -192,5 +235,29 @@ $(document).ready(function() {
 
 
   //----------------------------------------filters--------------------------------------//
+
+  //----------------------------------------sort--------------------------------------//
+  $('.sort__item').on('click', function() {
+    list_sort = $(this).parent().children();
+    var active_elements = 0;
+
+    for (var i = list_sort.length - 1; i >= 0; i--) {
+      if ($(list_sort[i]).hasClass('active')) {
+        active_elements = active_elements + 1;
+      }
+    }
+    if (active_elements == 1) {
+      $(this).parent().children().addClass('active');
+    } else {
+      $(this).parent().children().removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+  //----------------------------------------sort--------------------------------------//
+  //----------------------------------------toggle heart--------------------------------------//
+  $('.card__heart').on('click', function() {
+    $(this).toggleClass('active');
+  })
+  //----------------------------------------toggle heart--------------------------------------//
 
 });
