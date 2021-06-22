@@ -1,15 +1,10 @@
-// %title-font {
-// 	font-family: 'Montserrat', sans-serif;
-// 	font-weight: 700;
-// }
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
 
-// @function max($numbers...) {
-// 	@return m#{a}x(#{$numbers});
-// }
-
-// @function min($numbers...) {
-// 	@return m#{i}n(#{$numbers});
-// }
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
 
 $green: #319D50;
 $middle-green: #138434;

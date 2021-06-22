@@ -218,11 +218,13 @@
     justify-content: center;
 
     border: 2px solid $grey2;
-
+    transition: all .3s;
+ 
     &--none {
       background: $grey1;
       position: relative;
       overflow: hidden;
+      pointer-events: none;
 
       &::after {
         content: '';
@@ -640,6 +642,7 @@
     font-size: 12px;
     margin-right: 5px;
   }
+
   .card__content-subtitle {
     font-size: 14px;
     line-height: 20px;

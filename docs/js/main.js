@@ -34,6 +34,13 @@ $(document).ready(function() {
     ]
   });
 
+  $('.style__slider').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
   $('.slider').slick({
     autoplay: true,
     dots: true,
@@ -69,20 +76,64 @@ $(document).ready(function() {
     }
   })
 
-  // cards = $('.card')
-  // for (var i = cards.length - 1; i >= 0; i--) {
-  //   h = $(cards[0]).width();
-  //   console.log($(cards[i]).width());
-  //   if ($(cards[i]).width() > h) {
-  //     console.log('max ' + $(cards[i]).width());
-  //     $(cards[i]).width(h).css('flex-grow', '0');
-  //   }
-  // }
-
   //----------------------------------------card-slider--------------------------------------//
+  //----------------------------------------dauble-slider--------------------------------------//
+  var slickPrimarySecondary = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    infinite: true
+  };
+  var slickNavigator = {
+    vertical: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.nav',
+    speed: 500,
+    dots: false,
+    arrows: true,
+    focusOnSelect: true,
+    centerMode: false,
+    infinite: true
+  };
 
+  $('.primary').slick(slickPrimarySecondary);
 
+  $('.navigator').slick(slickNavigator);
+  //----------------------------------------dauble-slider--------------------------------------//
   //----------------------------------------slider--------------------------------------//
+  //----------------------------------------size--------------------------------------//
+  $('.product-select__item').on('click', function() {
+    $('.product-select__item').removeClass('active');
+    $(this).toggleClass('active');
+  })
+  //----------------------------------------size--------------------------------------//
+  //----------------------------------------color--------------------------------------//
+  colors = $('.product-select__color-item span');
+  for (var i = colors.length - 1; i >= 0; i--) {
+    color_el = $(colors[i]).text();
+    $(colors[i]).css('background', color_el);
+  }
+  $('.product-select__color-item').on('click', function() {
+    $('.product-select__color-item').removeClass('active');
+    $(this).toggleClass('active');
+  })
+
+  $('.product-select__color-item').on('mouseenter', function() {
+    $(this).find('.product-select__color-info').addClass('product-select__color-info--active');
+  })
+  $('.product-select__color-item').on('mouseleave', function() {
+    $(this).find('.product-select__color-info').removeClass('product-select__color-info--active');
+  })
+
+  //----------------------------------------color--------------------------------------//
+  //----------------------------------------heart--------------------------------------//
+  $('.product-select__favorite').on('click', function() {
+    $(this).toggleClass('active');
+  })
+  //----------------------------------------heart--------------------------------------//
   //----------------------------------------personal-menu--------------------------------------//
   $('.personal-menu__trigger').on('mouseover', function() {
     if ($(window).width() > 768) {
