@@ -186,7 +186,7 @@
               <span>Итого к оплате</span>
               <span>20 900 ₽</span>
             </div>
-            <button class="order__button button button--green">Оформить заказ</button>
+            <button data-fancybox data-src="#order" href="javascript:;" class="order__button button button--green">Оформить заказ</button>
             <div class="order__info">
               <span>Я согласен с условиями </span>
               <a href="" class="order__info-link">Публичной оферты и обработки персональных данных</a>
@@ -196,6 +196,25 @@
         </aside>
       </div>
     </div>
+    <!--                         contact-form                         -->
+    <form style="display: none;" id="order" class=" -form">
+      <div class="review-form__icon"></div>
+      <h2 class="review-form__title">Оставьте отзыв о товаре</h2>
+      <div class="review-form__text">Оставьте отзыв, и мы опубликуем его после проверки модератором</div>
+      <label class="review-form__label">
+        <input type="text" class="review-form__input" placeholder="Ваша оценка">
+        <ul class="stars">
+          <li class="star active"></li>
+          <li class="star active"></li>
+          <li class="star active"></li>
+          <li class="star "></li>
+          <li class="star "></li>
+        </ul>
+      </label>
+      <textarea type="text" class="review-form__textarea" placeholder="Отзыв"></textarea>
+      <button class="button button--green">Отправить</button>
+    </form>
+    <!--                         contact-form                         -->
   </main>
   @@include('./components/footer.html')
   <script src="js/main.min.js"></script>

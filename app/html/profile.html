@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+  <title>Brando</title>
+</head>
+
+<body>
+  @@include('./components/hidden-menu.html')
+  @@include('./components/header.html')
+  <main class="main">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__line">-</span>
+        <a href="" class="breadcrumbs__link">Личный кабинет</a>
+        <span class="breadcrumbs__line">-</span>
+        <span class="breadcrumbs__span">Мой профиль</span>
+      </div>
+      <!--                         breadcrumbs                          -->
+      <h2 class="page-title">Оформление заказа</h2>
+      <div class="order__wrapper">
+        <div class="order-form">
+          <!--                         section                         -->
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">1</span>
+              <span>Контактные данные</span>
+            </h3>
+            <div class="order-form__label-wrapper">
+              <label class="order-form__label">
+                <span class="order-form__label-title">Фамилия</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Имя</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Отчество</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Эл.почта</span>
+                <input type="email" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Телефон</span>
+                <input type="tel" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Индекс</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Город</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Улица</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <div class="order-form__group">
+                <label class="order-form__label">
+                  <span class="order-form__label-title">Дом</span>
+                  <input type="text" class="order-form__input" placeholder="">
+                </label>
+                <label class="order-form__label">
+                  <span class="order-form__label-title">Квартира</span>
+                  <input type="text" class="order-form__input" placeholder="">
+                </label>
+              </div>
+              <div class="order-form__dob">
+                <label class="order-form__dob-label">
+                  <span class="order-form__label-title">Дата рождения</span>
+                  <input type="date" class="order-form__input">
+                </label>
+              </div>
+              <!--                         hidden                         -->
+              <label class="order-form__label order-form__label--empty">
+              </label>
+              <!--                         hidden                         -->
+              <div class="checkbox__group">
+                <span class="order-form__label-title">Пол</span>
+                <div class="checkbox__group-wrapper">
+                  <!--                         checkbox                         -->
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-fake"></span>
+                    <span>Женский</span>
+                  </label>
+                  <!--                         checkbox                         -->
+                  <!--                         checkbox                         -->
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-fake"></span>
+                    <span>Мужской</span>
+                  </label>
+                  <!--                         checkbox                         -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--                         section                         -->
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">2</span>
+              <span>Данные для входа в профиль</span>
+            </h3>
+            <div class="order-form__label-wrapper">
+              <label class="order-form__label">
+                <span class="order-form__label-title">Пароль</span>
+                <input type="password" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Пароль повтор</span>
+                <input type="password" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label order-form__label--empty">
+              </label>
+            </div>
+          </div>
+          <!--                         section                         -->
+          <div class="order-form__section order-form__section--row">
+            <div class="order-form__confirmation">
+              <span>Я согласен с условиями </span>
+              <div class="order-form__confirmation-link">Публичной оферты и обработки персональных данных</div>
+            </div>
+            <div class="order-form__group-button">
+              <button class="button button--white">Отменить</button>
+              <button class="button button--green">Сохранить</button>
+            </div>
+          </div>
+          <!--                         section                         -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

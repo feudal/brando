@@ -274,20 +274,18 @@
 </header>
   <main class="main">
     <div class="container">
-      <!--                         breadcrumbs                         -->
       <div class="breadcrumbs">
         <a href="" class="breadcrumbs__link">Главная</a>
         <span class="breadcrumbs__line">-</span>
         <a href="" class="breadcrumbs__link">Личный кабинет</a>
         <span class="breadcrumbs__line">-</span>
-        <a href="" class="breadcrumbs__link">Корзина</a>
-        <span class="breadcrumbs__line">-</span>
-        <span class="breadcrumbs__span">Оформление заказа</span>
+        <span class="breadcrumbs__span">Мой профиль</span>
       </div>
       <!--                         breadcrumbs                          -->
       <h2 class="page-title">Оформление заказа</h2>
       <div class="order__wrapper">
         <div class="order-form">
+          <!--                         section                         -->
           <div class="order-form__section">
             <h3 class="order-form__title">
               <span class="order-form__title-span">1</span>
@@ -336,143 +334,72 @@
                   <input type="text" class="order-form__input" placeholder="">
                 </label>
               </div>
+              <div class="order-form__dob">
+                <label class="order-form__dob-label">
+                  <span class="order-form__label-title">Дата рождения</span>
+                  <input type="date" class="order-form__input">
+                </label>
+              </div>
+              <!--                         hidden                         -->
+              <label class="order-form__label order-form__label--empty">
+              </label>
+              <!--                         hidden                         -->
+              <div class="checkbox__group">
+                <span class="order-form__label-title">Пол</span>
+                <div class="checkbox__group-wrapper">
+                  <!--                         checkbox                         -->
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-fake"></span>
+                    <span>Женский</span>
+                  </label>
+                  <!--                         checkbox                         -->
+                  <!--                         checkbox                         -->
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-fake"></span>
+                    <span>Мужской</span>
+                  </label>
+                  <!--                         checkbox                         -->
+                </div>
+              </div>
             </div>
           </div>
+          <!--                         section                         -->
           <div class="order-form__section">
             <h3 class="order-form__title">
               <span class="order-form__title-span">2</span>
-              <span>Способ получения заказа</span>
+              <span>Данные для входа в профиль</span>
             </h3>
-            <div class="checkbox__group">
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Доставка курьером по Красноярску</span>
+            <div class="order-form__label-wrapper">
+              <label class="order-form__label">
+                <span class="order-form__label-title">Пароль</span>
+                <input type="password" class="order-form__input" placeholder="">
               </label>
-              <!--                         checkbox                         -->
-              <div class="order-form__info">Бесплатная доставка и примерка</div>
-              <div class="order-form__time">
-                <label class="order-form__time-label">
-                  <span class="order-form__time-label-title">Удобная дата доставки</span>
-                  <input type="date" class="order-form__calendar">
-                </label>
-                <label class="order-form__time-label">
-                  <span class="order-form__time-label-title">Удобное время доставки</span>
-                  <input type="time" class="order-form__calendar">
-                </label>
-              </div>
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Самовывоз</span>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Пароль повтор</span>
+                <input type="password" class="order-form__input" placeholder="">
               </label>
-              <!--                         checkbox                         -->
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Почтой России / Транспортной компанией </span>
+              <label class="order-form__label order-form__label--empty">
               </label>
-              <!--                         checkbox                         -->
             </div>
           </div>
-          <div class="order-form__section">
-            <h3 class="order-form__title">
-              <span class="order-form__title-span">3</span>
-              <span>Способ оплаты</span>
-            </h3>
-            <div class="checkbox__group">
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Безналичная оплата курьеру</span>
-              </label>
-              <!--                         checkbox                         -->
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Оплата в кассе магазина</span>
-              </label>
-              <!--                         checkbox                         -->
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Оплата на сайте</span>
-              </label>
-              <!--                         checkbox                         -->
-              <!--                         checkbox                         -->
-              <label class="checkbox-label">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-fake"></span>
-                <span>Оплата подарочной картой</span>
-              </label>
-              <!--                         checkbox                         -->
-            </div>
-          </div>
-          <div class="order-form__section">
-            <h3 class="order-form__title">
-              <span class="order-form__title-span">4</span>
-              <span>Комментарий</span>
-            </h3>
-            <label>
-              <span class="order-form__label-title">Комментарий</span>
-              <textarea class="order-form__textarea"></textarea>
-            </label>
-          </div>
-        </div>
-        <aside class="order">
-          <div class="order__inner">
-            <h3 class="order__title">Итого</h3>
-            <div class="order__name">
-              <span>2 товара на сумму</span>
-              <span>21 000 ₽</span>
-            </div>
-            <div class="order__name">
-              <span>Вы экономите</span>
-              <span>-550 ₽</span>
-            </div>
-            <div class="order__name">
-              <span>стоимость доставки</span>
-              <span>450 ₽</span>
-            </div>
-            <div class="order__name order__name--bold">
-              <span>Итого к оплате</span>
-              <span>20 900 ₽</span>
-            </div>
-            <button data-fancybox data-src="#order" href="javascript:;" class="order__button button button--green">Оформить заказ</button>
-            <div class="order__info">
+          <!--                         section                         -->
+          <div class="order-form__section order-form__section--row">
+            <div class="order-form__confirmation">
               <span>Я согласен с условиями </span>
-              <a href="" class="order__info-link">Публичной оферты и обработки персональных данных</a>
+              <div class="order-form__confirmation-link">Публичной оферты и обработки персональных данных</div>
+            </div>
+            <div class="order-form__group-button">
+              <button class="button button--white">Отменить</button>
+              <button class="button button--green">Сохранить</button>
             </div>
           </div>
-          <button class="order__button button button--white">Редактировать заказ</button>
-        </aside>
+          <!--                         section                         -->
+        </div>
       </div>
     </div>
-    <!--                         contact-form                         -->
-    <form style="display: none;" id="order" class=" -form">
-      <div class="review-form__icon"></div>
-      <h2 class="review-form__title">Оставьте отзыв о товаре</h2>
-      <div class="review-form__text">Оставьте отзыв, и мы опубликуем его после проверки модератором</div>
-      <label class="review-form__label">
-        <input type="text" class="review-form__input" placeholder="Ваша оценка">
-        <ul class="stars">
-          <li class="star active"></li>
-          <li class="star active"></li>
-          <li class="star active"></li>
-          <li class="star "></li>
-          <li class="star "></li>
-        </ul>
-      </label>
-      <textarea type="text" class="review-form__textarea" placeholder="Отзыв"></textarea>
-      <button class="button button--green">Отправить</button>
-    </form>
-    <!--                         contact-form                         -->
+    </div>
   </main>
   <footer class="footer">
   <div class="footer__inner">
