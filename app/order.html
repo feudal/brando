@@ -280,296 +280,179 @@
         <span class="breadcrumbs__line">-</span>
         <a href="" class="breadcrumbs__link">Личный кабинет</a>
         <span class="breadcrumbs__line">-</span>
-        <span class="breadcrumbs__span">Корзина</span>
+        <a href="" class="breadcrumbs__link">Корзина</a>
+        <span class="breadcrumbs__line">-</span>
+        <span class="breadcrumbs__span">Оформление заказа</span>
       </div>
       <!--                         breadcrumbs                          -->
-      <h2 class="page-title">Корзина</h2>
-      <div class="basket">
-        <div class="product-list">
-          <div class="product-item">
-            <div class="product-item__img-wrapper ">
-              <div class="product-item__img">
-                <a href=""><img src="../img/products/product.jpg" alt=""></a>
-              </div>
-              <div class="product-item__column product-item__mob">
-                <div class="product-item__column-title">Количество</div>
-                <div class="product-item__column-counter">
-                  <div class="counter">
-                    <div class="counter__minus">-</div>
-                    <div class="counter__nr">1</div>
-                    <div class="counter__plus active">+</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-item__wrapper">
-              <h3 class="product-item__title">SCHUTZ</h3>
-              <div class="product-item__wrapper-2">
-                <div class="product-item__column">
-                  <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
-                  <table class=" product-item__table table ">
-                    <tr class="tr">
-                      <th class="th th--ask">Артикул:</th>
-                      <th class="th th--answer">2457448</th>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th th--ask">Размер: </th>
-                      <th class="th th--answer">38</th>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th th--ask">Цвет:</th>
-                      <th class="th th--answer">темно-зеленый</th>
-                    </tr>
-                  </table>
-                </div>
-                <div class="product-item__column product-item__desk">
-                  <div class="product-item__column-title">Количество</div>
-                  <div class="product-item__column">
-                    <div class="product-item__column-counter">
-                      <div class="counter">
-                        <div class="counter__minus">-</div>
-                        <div class="counter__nr">1</div>
-                        <div class="counter__plus">+</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__column-title">Стоимость</div>
-                  <div class="product-item__price">4 550 ₽</div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__column-title">Стоимость со скидкой </div>
-                  <div class="product-item__price product-item__price--bold">2 350 ₽</div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__close"></div>
-                </div>
+      <h2 class="page-title">Оформление заказа</h2>
+      <div class="order__wrapper">
+        <div class="order-form">
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">1</span>
+              <span>Контактные данные</span>
+            </h3>
+            <div class="order-form__label-wrapper">
+              <label class="order-form__label">
+                <span class="order-form__label-title">Фамилия</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Имя</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Отчество</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Эл.почта</span>
+                <input type="email" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Телефон</span>
+                <input type="tel" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Индекс</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Город</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <label class="order-form__label">
+                <span class="order-form__label-title">Улица</span>
+                <input type="text" class="order-form__input" placeholder="">
+              </label>
+              <div class="order-form__group">
+                <label class="order-form__label">
+                  <span class="order-form__label-title">Дом</span>
+                  <input type="text" class="order-form__input" placeholder="">
+                </label>
+                <label class="order-form__label">
+                  <span class="order-form__label-title">Квартира</span>
+                  <input type="text" class="order-form__input" placeholder="">
+                </label>
               </div>
             </div>
           </div>
-          <div class="product-item">
-            <div class="product-item__img-wrapper">
-              <div class="product-item__img">
-                <a href=""><img src="../img/products/product2.jpg" alt=""></a>
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">2</span>
+              <span>Способ получения заказа</span>
+            </h3>
+            <div class="checkbox__group">
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Доставка курьером по Красноярску</span>
+              </label>
+              <!--                         checkbox                         -->
+              <div class="order-form__info">Бесплатная доставка и примерка</div>
+              <div class="order-form__time">
+                <label class="order-form__time-label">
+                  <span class="order-form__time-label-title">Удобная дата доставки</span>
+                  <input type="date" class="order-form__calendar">
+                </label>
+                <label class="order-form__time-label">
+                  <span class="order-form__time-label-title">Удобное время доставки</span>
+                  <input type="time" class="order-form__calendar">
+                </label>
               </div>
-              <div class="product-item__column product-item__mob">
-                <div class="product-item__column-title">Количество</div>
-                <div class="product-item__column-counter ">
-                  <div class="counter">
-                    <div class="counter__minus">-</div>
-                    <div class="counter__nr">1</div>
-                    <div class="counter__plus active">+</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-item__wrapper">
-              <h3 class="product-item__title">SCHUTZ</h3>
-              <div class="product-item__wrapper-2">
-                <div class="product-item__column">
-                  <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
-                  <table class=" product-item__table table ">
-                    <tr class="tr">
-                      <th class="th th--ask">Артикул:</th>
-                      <th class="th th--answer">458796</th>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th th--ask">Размер: </th>
-                      <th class="th th--answer">38</th>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th th--ask">Цвет:</th>
-                      <th class="th th--answer">темно-зеленый</th>
-                    </tr>
-                  </table>
-                </div>
-                <div class="product-item__column product-item__desk">
-                  <div class="product-item__column-title">Количество</div>
-                  <div class="product-item__column-counter">
-                    <div class="counter">
-                      <div class="counter__minus">-</div>
-                      <div class="counter__nr">1</div>
-                      <div class="counter__plus active">+</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__column-title">Стоимость</div>
-                  <div class="product-item__price">7 000 ₽</div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__column-title">Стоимость со скидкой </div>
-                  <div class="product-item__price product-item__price--bold">5 599 ₽</div>
-                </div>
-                <div class="product-item__column">
-                  <div class="product-item__close"></div>
-                </div>
-              </div>
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Самовывоз</span>
+              </label>
+              <!--                         checkbox                         -->
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Почтой России / Транспортной компанией </span>
+              </label>
+              <!--                         checkbox                         -->
             </div>
           </div>
-          <div class="basket__info">
-            <div class="basket__info-item">Товар в штучном количестве может быть продан в данный момент.</div>
-            <button class="basket__button button button--white">Продолжить покупки</button>
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">3</span>
+              <span>Способ оплаты</span>
+            </h3>
+            <div class="checkbox__group">
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Безналичная оплата курьеру</span>
+              </label>
+              <!--                         checkbox                         -->
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Оплата в кассе магазина</span>
+              </label>
+              <!--                         checkbox                         -->
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Оплата на сайте</span>
+              </label>
+              <!--                         checkbox                         -->
+              <!--                         checkbox                         -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-fake"></span>
+                <span>Оплата подарочной картой</span>
+              </label>
+              <!--                         checkbox                         -->
+            </div>
+          </div>
+          <div class="order-form__section">
+            <h3 class="order-form__title">
+              <span class="order-form__title-span">4</span>
+              <span>Комментарий</span>
+            </h3>
+            <label>
+              <span class="order-form__label-title">Комментарий</span>
+              <textarea class="order-form__textarea"></textarea>
+            </label>
           </div>
         </div>
         <aside class="order">
           <div class="order__inner">
+            <h3 class="order__title">Итого</h3>
+            <div class="order__name">
+              <span>2 товара на сумму</span>
+              <span>21 000 ₽</span>
+            </div>
             <div class="order__name">
               <span>Вы экономите</span>
+              <span>-550 ₽</span>
+            </div>
+            <div class="order__name">
+              <span>стоимость доставки</span>
               <span>450 ₽</span>
             </div>
             <div class="order__name order__name--bold">
               <span>Итого к оплате</span>
-              <span>21 450 ₽</span>
+              <span>20 900 ₽</span>
             </div>
             <button class="order__button button button--green">Оформить заказ</button>
+            <div class="order__info">
+              <span>Я согласен с условиями </span>
+              <a href="" class="order__info-link">Публичной оферты и обработки персональных данных</a>
+            </div>
           </div>
+          <button class="order__button button button--white">Редактировать заказ</button>
         </aside>
       </div>
-      <!--                         viewed-products                         -->
-      <div class="viewed-products">
-  <!--                         page-title                         -->
-  <h1 class="page-title">Просмотренные товары</h1>
-  <!--                         page-title                         -->
-  <div class="viewed-products__inner">
-    <!--                         card                         -->
-    <div class="card">
-      <div class="card__wrapper">
-        <div class="card__slider">
-          <div class="card__slider-item active">
-            <img src="img/products/schultz.jpg" alt="">
-          </div>
-          <div class="card__slider-item">
-            <img src="img/products/schultz.jpg" alt="">
-          </div>
-          <div class="card__slider-item">
-            <img src="img/products/schultz.jpg" alt="">
-          </div>
-          <div class="card__slider-item">
-            <img src="img/products/schultz.jpg" alt="">
-          </div>
-        </div>
-        <div class="card__content">
-          <div class="card__content-info">
-            <h3 class="card__content-title">SCHULTZ</h3>
-            <h4 class="card__content-subtitle">Женские зеленые кожаные сапоги</h4>
-          </div>
-          <div class="card__content-price">
-            <span class="card__price">2350 ₽</span>
-          </div>
-          <ul class="card__info-size">
-            <li class="card__size">35</li>
-            <li class="card__size card__size--none">36</li>
-            <li class="card__size card__size--none">37</li>
-            <li class="card__size">38</li>
-            <li class="card__size">39</li>
-            <li class="card__size">40</li>
-          </ul>
-        </div>
-        <div class="card__heart active">
-        </div>
-      </div>
-    </div>
-    <!--                         card                         -->
-    <!--                         card                         -->
-    <div class="card">
-      <div class="card__wrapper">
-        <div class="card__slider">
-          <div class="card__slider-item active"><img src="img/products/boots.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/boots.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/boots.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/boots.jpg" alt=""></div>
-        </div>
-        <div class="card__content">
-          <div class="card__content-info">
-            <h3 class="card__content-title">SCHULTZ</h3>
-            <h4 class="card__content-subtitle">Женские зеленые кожаные сапоги</h4>
-          </div>
-          <div class="card__content-price">
-            <span class="card__price">1700 ₽</span>
-          </div>
-          <ul class="card__info-size">
-            <li class="card__size">35</li>
-            <li class="card__size card__size--none">36</li>
-            <li class="card__size card__size--none">37</li>
-            <li class="card__size">38</li>
-            <li class="card__size">39</li>
-            <li class="card__size">40</li>
-          </ul>
-        </div>
-        <div class="card__heart">
-        </div>
-      </div>
-    </div>
-    <!--                         card                         -->
-    <!--                         card                         -->
-    <div class="card">
-      <div class="card__wrapper">
-        <div class="card__slider">
-          <div class="card__slider-item active"><img src="img/products/red-boot.jpg" alt=""></div>
-          <div class="card__slider-item "><img src="img/products/red-boot.jpg" alt=""></div>
-          <div class="card__slider-item "><img src="img/products/red-boot.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/red-boot.jpg" alt=""></div>
-        </div>
-        <div class="card__content">
-          <div class="card__content-info">
-            <h3 class="card__content-title">SCHULTZ</h3>
-            <h4 class="card__content-subtitle">Женские зеленые кожаные сапоги</h4>
-          </div>
-          <div class="card__content-price">
-            <span class="card__price card__price--red">10550 ₽</span>
-            <span class="card__price card__price--underline">12000 ₽</span>
-          </div>
-          <ul class="card__info-size">
-            <li class="card__size">35</li>
-            <li class="card__size card__size--none">36</li>
-            <li class="card__size card__size--none">37</li>
-            <li class="card__size">38</li>
-            <li class="card__size">39</li>
-            <li class="card__size">40</li>
-          </ul>
-        </div>
-        <div class="card__heart">
-        </div>
-        <div class="card__corner card__corner--sale">sale</div>
-      </div>
-    </div>
-    <!--                         card                         -->
-    <!--                         card                         -->
-    <div class="card">
-      <div class="card__wrapper">
-        <div class="card__slider">
-          <div class="card__slider-item active"><img src="img/products/shoes.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/shoes.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/shoes.jpg" alt=""></div>
-          <div class="card__slider-item"><img src="img/products/shoes.jpg" alt=""></div>
-        </div>
-        <div class="card__content">
-          <div class="card__content-info">
-            <h3 class="card__content-title">SCHULTZ</h3>
-            <h4 class="card__content-subtitle">Женские зеленые кожаные сапоги</h4>
-          </div>
-          <div class="card__content-price">
-            <span class="card__price">2900 ₽</span>
-          </div>
-          <ul class="card__info-size">
-            <li class="card__size">35</li>
-            <li class="card__size card__size--none">36</li>
-            <li class="card__size card__size--none">37</li>
-            <li class="card__size">38</li>
-            <li class="card__size">39</li>
-            <li class="card__size">40</li>
-          </ul>
-        </div>
-        <div class="card__heart">
-        </div>
-      </div>
-    </div>
-    <!--                         card                         -->
-  </div>
-</div>
-      <!--                         viewed-products                         -->
     </div>
   </main>
   <footer class="footer">

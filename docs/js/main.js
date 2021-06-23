@@ -232,7 +232,7 @@ $(document).ready(function() {
     }
   })
 
-  $(".checkbox").change(function() {
+  $(".filter__title .checkbox").change(function() {
     if (this.checked) { //if is checked
       val = $(this).parent().parent().parent().prev().children().text();
 
@@ -319,17 +319,30 @@ $(document).ready(function() {
   //----------------------------------------counter--------------------------------------//
   $('.counter__plus').on('click', function() {
     val = parseInt($(this).prev().text());
-      $(this).prev().text(val + 1);
-      $(this).prev().prev().addClass('counter__minus--active');
+    $(this).prev().text(val + 1);
+    $(this).prev().prev().addClass('counter__minus--active');
 
   })
 
   $('.counter__minus').on('click', function() {
     val = parseInt($(this).next().text());
     $(this).next().text(val - 1);
-    if(val == 2) {
+    if (val == 2) {
       $(this).removeClass('counter__minus--active');
     }
   })
   //----------------------------------------counter--------------------------------------//
+
+  //----------------------------------------group-checkbox--------------------------------------//
+  $('.checkbox').change(function() {
+    if ($(this).is(':checked')) {
+      checkbox_group = $(this).parent().parent().parent();
+      console.log(checkbox_group);
+      checkbox = $(checkbox_group).find('.checkbox').prop('checked', false);
+      console.log(checkbox);
+      $(this).prop('checked', true);
+    }
+
+  });
+  //----------------------------------------group-checkbox--------------------------------------//
 });
