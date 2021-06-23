@@ -310,5 +310,26 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   })
   //----------------------------------------toggle heart--------------------------------------//
+  //----------------------------------------close-basket--------------------------------------//
+  $('.product-item__close').on('click', function() {
+    $(this).parent().parent().parent().parent().hide();
+  })
+  //----------------------------------------close-basket--------------------------------------//
 
+  //----------------------------------------counter--------------------------------------//
+  $('.counter__plus').on('click', function() {
+    val = parseInt($(this).prev().text());
+      $(this).prev().text(val + 1);
+      $(this).prev().prev().addClass('counter__minus--active');
+
+  })
+
+  $('.counter__minus').on('click', function() {
+    val = parseInt($(this).next().text());
+    $(this).next().text(val - 1);
+    if(val == 2) {
+      $(this).removeClass('counter__minus--active');
+    }
+  })
+  //----------------------------------------counter--------------------------------------//
 });
