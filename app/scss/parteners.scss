@@ -1,0 +1,569 @@
+.parteners {
+  color: $black;
+  margin-bottom: 150px;
+
+  &__h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 30px;
+
+  }
+
+  &__list {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 60px;
+  }
+
+  &__list-item--square {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: $green;
+      margin-right: 20px;
+
+    }
+  }
+
+  &__list-item--nr {
+    list-style-type: none;
+    counter-increment: list;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: counter(list);
+      width: 17px;
+      height: 17px;
+      border: 1px solid $green;
+      margin-right: 20px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 8px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $green;
+
+    }
+  }
+
+
+
+  &__h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 30px;
+  }
+
+
+  &__slider {
+    .slick-slide {
+
+      margin-right: 10px;
+    }
+
+    .slick-list {
+      margin-right: -10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & button.slick-arrow {
+      cursor: pointer;
+      width: 40px;
+      height: 30px;
+      border: none;
+      background: url(../img/icons/Arrow.svg) no-repeat center center;
+      font-size: 0;
+
+      position: absolute;
+      z-index: 10;
+      top: calc(50% - 15px);
+      left: -10px;
+      transform: rotate(180deg);
+
+      &.slick-prev {
+        transform: rotate(360deg);
+        left: auto;
+        right: -10px;
+      }
+    }
+
+    & .slick-dots {
+      display: none !important;
+    }
+  }
+
+  &__slider-item {}
+
+  &__h4 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 30px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 60px;
+  }
+
+  &__h5 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 30px;
+  }
+}
+
+.brand-slider__title {
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin-bottom: 30px;
+
+  span {
+    color: $green;
+  }
+
+}
+
+.parteners {
+  &__social-title {
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__social {
+    width: calc(100% + 10px);
+    display: flex;
+    margin-bottom: 200px;
+  }
+
+  &__social-item {
+    &:hover .social-card__title {
+      color: $green;
+    }
+
+    &:hover path {
+      fill: $green;
+    }
+
+    &:hover .social-card__logo {
+      background: transparent;
+    }
+  }
+}
+
+.social-card {
+  position: relative;
+  margin-right: 10px;
+
+  &__img {
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    transition: all .3s;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 10px;
+    }
+
+  }
+
+  &__logo {
+    transition: all .3s;
+    width: 100px;
+    height: 100px;
+    background: $green;
+    border: 2px solid $green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+  }
+}
+
+/*****--------------------partners-main-----------------*****/
+.parteners-main {
+  color: $black;
+  margin-bottom: 60px;
+
+  display: flex;
+
+  &__img {
+    width: 40%;
+    margin-right: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    width: 60%;
+  }
+
+  &__title {
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    span {
+      color: $green;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__button {
+    padding: 10px 40px;
+    width: auto;
+    margin-top: 40px;
+
+  }
+
+  &__list {
+    margin-top: 40px;
+    width: calc(100% + 10px);
+    display: flex;
+  }
+
+  &__card {
+    flex: 30% 1 1;
+    border-left: 1px solid $green;
+    padding-left: 15px;
+    margin-right: 10px;
+  }
+
+  &__card-title {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    span {
+      color: $green;
+      display: block;
+
+      font-size: 28px;
+      font-weight: 400;
+
+    }
+  }
+
+  &__card-text {
+    font-family: Geometria;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark-grey;
+  }
+}
+
+/*****--------------------partners-main-----------------*****/
+.parteners {
+  .brand-slider {
+    width: calc(100% - 40px);
+    height: 100px;
+    margin: 0 20px;
+
+    &__item {
+      height: 100px;
+    }
+  }
+}
+
+/*****--------------------media-----------------*****/
+
+@media only screen and (max-width: 1200px) {
+  .parteners {
+    .brand-slider {
+      width: calc(100% - 40px);
+      height: 100px;
+      margin: 0 20px;
+
+      &__item {
+        height: 100px;
+      }
+    }
+  }
+
+  .social-card__logo {
+    width: 80px;
+    height: 80px;
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .parteners-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__img {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .parteners__social {
+    margin-bottom: 100px;
+  }
+
+  .parteners__list {
+    margin-bottom: 40px;
+  }
+
+  .parteners__paragraph {
+    margin-bottom: 40px;
+  }
+
+  .parteners-main {
+    margin-bottom: 40px;
+  }
+
+  .social-card__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .social-card__logo {
+    width: 60px;
+    height: 60px;
+    right: 10px;
+    bottom: -30px;
+
+    svg {
+      transform: scale(.8);
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social-card__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .social-card__logo {
+    transform: scale(.8);
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .parteners-main {
+    &__img {
+      width: 100%;
+      height: auto;
+
+      img {
+        object-fit: cover;
+      }
+    }
+    &__list {
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: column;
+    }
+    &__card {
+    	margin-top: 20px;
+    }
+
+    &__content {
+    }
+    &__button {
+    	width: 100%;
+    }
+  }
+
+  .parteners__social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .social-card__img {
+    margin-bottom: 70px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  .social-card__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .social-card__logo {
+    transform: scale(1);
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    bottom: -50px;
+
+    svg {
+      transform: scale(1);
+
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .social-card__logo {
+    transform: scale(.7);
+    right: 0;
+  }
+
+  .brand-slider__title {
+    text-align: center;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .parteners {
+
+    &__h1,
+    &__h2,
+    &__h3,
+    &__h4,
+    &__h5,
+    &__h6 {
+      text-align: center;
+    }
+  }
+
+}
+
+/*****--------------------media-----------------*****/
