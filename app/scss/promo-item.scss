@@ -1,0 +1,220 @@
+.promo-action {
+  &__wrapper {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    margin-right: 40px;
+    width: calc(50% - 40px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    width: 50%;
+  }
+
+  &__title {
+    font-family: Geometria;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    span {
+      color: $green;
+    }
+  }
+
+  &__subtitle {
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark-grey;
+    margin-top: 40px;
+  }
+
+  &__timer {
+    margin-top: 20px;
+  }
+
+  &__text {
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $black;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &__nr {
+    width: 50px;
+    height: 50px;
+    background: $grey1;
+
+    font-family: Geometria;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $green;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+
+      height: 16px;
+      font-family: Geometria;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $black;
+
+    }
+  }
+
+  &__dots {
+    font-family: Geometria;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    display: inline-block;
+    padding: 0 7px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .promo-action {
+    position: relative;
+
+    &__img {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__info {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgba(#fff, .2);
+      padding: 20px;
+
+      z-index: 10;
+      width: 60%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .promo-action {
+    &__wrapper {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__img {}
+
+    &__info {
+      width: 100%;
+      position: relative;
+      order: -1;
+      padding: 0;
+      margin-bottom: 40px;
+
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .promo-action__title {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .promo-action__subtitle {
+    text-align: center;
+    margin-top: 20px;
+
+    br {
+      display: none;
+    }
+  }
+  .timer {
+  	text-align: center;
+  	display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .viewed-products {
+    margin-bottom: 40px;
+  }
+
+  .promo-action__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .promo-action__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+	.promo-card__date {
+		padding-right: 90px;
+	}
+  .promo-action__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .page-title  {
+  	    font-size: 26px;
+    line-height: 32px;
+  }
+}
