@@ -1,0 +1,399 @@
+/*****--------------------grid-----------------*****/
+.us-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 10px;
+
+  margin-bottom: 60px;
+
+  &__img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--big {
+      order: 3;
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+  }
+}
+
+/*****--------------------grid-----------------*****/
+
+.us-video {
+  margin-left: 135px;
+  margin-bottom: 60px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.slider-card {
+  margin-bottom: 60px;
+
+  &__item {}
+
+  &__wrapper {
+    display: flex;
+    background: $grey1;
+    margin-left: 130px;
+    padding: 60px 0;
+
+    position: relative;
+  }
+
+  &__img {
+    width: calc(40% + 90px);
+    height: 300px;
+    position: absolute;
+    left: -130px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    width: 60%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40%;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__text {
+    margin-top: 30px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+.slider-card {
+  & button.slick-arrow {
+
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: none;
+    background: url(../img/icons/Arrow.svg) no-repeat center center;
+    font-size: 0;
+
+    position: absolute;
+    z-index: 10;
+    bottom: 60px;
+    right: calc(60% - 120px);
+    transform: rotate(180deg);
+
+    &.slick-prev {
+      right: calc(60% - 180px);
+      transform: rotate(360deg);
+      bottom: 61px;
+    }
+  }
+}
+
+/*****--------------------us-main-----------------*****/
+.us-main {
+  &__inner {
+    margin-bottom: 60px;
+
+    display: flex;
+  }
+
+  &__img {
+    min-width: 40%;
+    margin-right: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {}
+
+  &__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 30px;
+
+    span {
+      color: $green;
+    }
+
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $green;
+    margin-bottom: 40px;
+  }
+
+  &__quote {
+    position: relative;
+    padding-left: 100px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      display: inline-block;
+      width: 80px;
+      height: 58px;
+      background: url(../img/icons/right-quote.svg) no-repeat center center;
+    }
+  }
+
+  &__quote-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+
+.us-statistic {
+  width: 70%;
+  margin-bottom: 60px;
+
+  &__text {
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    margin-top: 60px;
+  }
+
+
+  &__item {
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 30px;
+
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__nr {
+
+    color: #319D50;
+
+  }
+
+  &__name {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/*****--------------------media-----------------*****/
+@media only screen and (max-width: 1200px) {
+  .us-main {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__img {
+      height: 700px;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  .us-statistic {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .us-main {
+    &__img {
+      height: 80vw;
+    }
+  }
+
+  .us-statistic {
+
+    &__info {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 0 10px 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .us-video {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider-card {
+    &__wrapper {
+      padding: 30px 0;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    & button.slick-arrow {
+      bottom: 30px;
+
+      &.slick-prev {
+        bottom: 31px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .us-grid {
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    &__img--big {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+  }
+
+  .us-main {
+    &__inner {
+      margin-bottom: 30px;
+    }
+
+    &__quote {
+      padding-left: 60px;
+
+      &::before {
+        transform-origin: 0 0;
+        transform: scale(.5);
+      }
+    }
+
+    &__quote-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  /*****--------------------slider-----------------*****/
+
+  .slider-card {
+    &__wrapper {
+      margin-left: 0;
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    &__img {
+      position: relative;
+      left: 0;
+      width: 100%;
+    }
+
+    &__content {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      padding: 60px 0 20px;
+    }
+
+    &__title {
+      // margin-right: 30px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    & button.slick-arrow {
+      top: 57%;
+      left: auto;
+      right: auto;
+
+      &.slick-prev {
+        left: calc(50% + 10px);
+      }
+
+      &.slick-next {
+        right: calc(50% + 10px);
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  .slider-card {
+    & button.slick-arrow {
+      top: 51%;
+    }
+  }
+}
