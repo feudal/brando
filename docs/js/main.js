@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  //----------------------------------------links-active --------------------------------------//
+  path = $(location).attr('pathname');
+  path = path.slice(1);
+  links = $('.top-menu__link');
+
+  for (var i = links.length - 1; i >= 0; i--) {
+    if($(links[i]).attr('href') == path) {
+      $(links[i]).addClass('active');
+    }
+  }
+
+  //----------------------------------------links-active --------------------------------------//
   //----------------------------------------slider--------------------------------------//
   $('.slider-card').slick({
     slidesToShow: 1,

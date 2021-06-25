@@ -74,6 +74,9 @@
     &:active {
       color: $dark-green;
     }
+    &.active {
+      color: $green;
+    }
   }
 }
 
