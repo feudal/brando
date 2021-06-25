@@ -1,5 +1,10 @@
 $(document).ready(function() {
   //----------------------------------------slider--------------------------------------//
+  $('.slider-card').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
   $('.parteners__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -353,7 +358,7 @@ $(document).ready(function() {
   //----------------------------------------counter--------------------------------------//
 
   //----------------------------------------group-checkbox--------------------------------------//
-  $('.checkbox').change(function() {
+  $('.checkbox__group .checkbox').change(function() {
     if ($(this).is(':checked')) {
       checkbox_group = $(this).parent().parent().parent();
       console.log(checkbox_group);
