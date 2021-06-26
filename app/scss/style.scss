@@ -25,3 +25,9 @@ body {
   font-weight: normal;
 }
 
+.card__content-subtitle {
+  transition: all .3s;
+  &:hover {
+    color: $green;
+  }
+}
