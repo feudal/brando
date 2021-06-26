@@ -3,9 +3,13 @@ $(document).ready(function() {
   path = $(location).attr('pathname');
   path = path.slice(1);
   links = $('.top-menu__link');
+  console.log(links);
+  console.log(path);
 
   for (var i = links.length - 1; i >= 0; i--) {
+      console.log('is ...');
     if($(links[i]).attr('href') == path) {
+      console.log('is true');
       $(links[i]).addClass('active');
     }
   }
