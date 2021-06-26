@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+  <title>Brando</title>
+</head>
+
+<body>
+  @@include('./components/hidden-menu.html')
+  @@include('./components/header.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__line">-</span>
+        <a href="" class="breadcrumbs__link">Личный кабинет</a>
+        <span class="breadcrumbs__line">-</span>
+        <span class="breadcrumbs__span"> Завершенные заказы</span>
+      </div>
+      <!--                         breadcrumbs                          -->
+      <!--                         page-title                         -->
+      <h1 class="page-title">Завершенные заказы</h1>
+      <!--                         page-title                         -->
+      <div class="big-list">
+        <div class="order-item">
+          <div class="order-item__top">
+            <div class="order-item__info">
+              <div class="order-item__nr">ЗАКАЗ №99999 </div>
+              <div class="order-item__status">В обработке</div>
+            </div>
+            <div class="order-item__date">от 21.01.2020</div>
+            <div class="order-item__total">Сумма заказа<span class="oreder-item__bold">5 599 ₽</span></div>
+            <div class="order-item__images">
+              <img src="img/order-item1.jpg" alt="">
+              <img src="img/order-item2.jpg" alt="">
+            </div>
+            <div class="order-item__toggle"></div>
+          </div>
+          <div class="order-item__content">
+            <div class="order-item__details">
+              <table class=" product-item__table table ">
+                <tr class="tr">
+                  <th class="th th--ask">Статус:</th>
+                  <th class="th th--green">В обработке</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Способ доставки:</th>
+                  <th class="th th--answer">Доставка курьером</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Оплачен:</th>
+                  <th class="th th--answer">Да</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Способ оплаты:</th>
+                  <th class="th th--answer">Оплата на сайте</th>
+                </tr>
+              </table>
+            </div>
+            <ul class="order-item__list">
+              <li>
+                <div class="product-item product-item--no-border">
+                  <div class="product-item__img-wrapper ">
+                    <div class="product-item__img">
+                      <a href="product-card.html"><img src="img/order-item1.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="product-item__wrapper">
+                    <h3 class="product-item__title">SCHUTZ</h3>
+                    <div class="product-item__wrapper-2">
+                      <div class="product-item__column">
+                        <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
+                        <table class=" product-item__table table ">
+                          <tr class="tr">
+                            <th class="th th--ask">Артикул:</th>
+                            <th class="th th--answer">2457448</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Размер: </th>
+                            <th class="th th--answer">38</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Цвет:</th>
+                            <th class="th th--answer">темно-зеленый</th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="flex-wrapper">
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Количество</div>
+                          <div class="product-item__price">1</div>
+                        </div>
+                        <div class="product-item__space"></div>
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Цена</div>
+                          <div class="product-item__price">4 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+              <li class="order-item__line"></li>
+              </li>
+              <li>
+                <div class="product-item product-item--no-border">
+                  <div class="product-item__img-wrapper ">
+                    <div class="product-item__img">
+                      <a href="product-card.html"><img src="img/order-item2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="product-item__wrapper">
+                    <h3 class="product-item__title">SCHUTZ</h3>
+                    <div class="product-item__wrapper-2">
+                      <div class="product-item__column">
+                        <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
+                        <table class=" product-item__table table ">
+                          <tr class="tr">
+                            <th class="th th--ask">Артикул:</th>
+                            <th class="th th--answer">2457448</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Размер: </th>
+                            <th class="th th--answer">38</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Цвет:</th>
+                            <th class="th th--answer">темно-зеленый</th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="flex-wrapper">
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Количество</div>
+                          <div class="product-item__price">1</div>
+                        </div>
+                        <div class="product-item__space"></div>
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Цена</div>
+                          <div class="product-item__price">4 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="order-item">
+          <div class="order-item__top">
+            <div class="order-item__info">
+              <div class="order-item__nr">ЗАКАЗ №99999 </div>
+              <div class="order-item__status">В доставке</div>
+            </div>
+            <div class="order-item__date">от 21.01.2020</div>
+            <div class="order-item__total">Сумма заказа<span class="oreder-item__bold">5 599 ₽</span></div>
+            <div class="order-item__images">
+              <img src="img/order-item1.jpg" alt="">
+              <img src="img/order-item2.jpg" alt="">
+            </div>
+            <div class="order-item__toggle"></div>
+          </div>
+          <div class="order-item__content">
+            <div class="order-item__details">
+              <table class=" product-item__table table ">
+                <tr class="tr">
+                  <th class="th th--ask">Статус:</th>
+                  <th class="th th--green">В доставке</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Способ доставки:</th>
+                  <th class="th th--answer">Доставка курьером</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Оплачен:</th>
+                  <th class="th th--answer">Да</th>
+                </tr>
+                <tr class="tr">
+                  <th class="th th--ask">Способ оплаты:</th>
+                  <th class="th th--answer">Оплата на сайте</th>
+                </tr>
+              </table>
+            </div>
+            <ul class="order-item__list">
+              <li>
+                <div class="product-item product-item--no-border">
+                  <div class="product-item__img-wrapper ">
+                    <div class="product-item__img">
+                      <a href="product-card.html"><img src="img/order-item1.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="product-item__wrapper">
+                    <h3 class="product-item__title">SCHUTZ</h3>
+                    <div class="product-item__wrapper-2">
+                      <div class="product-item__column">
+                        <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
+                        <table class=" product-item__table table ">
+                          <tr class="tr">
+                            <th class="th th--ask">Артикул:</th>
+                            <th class="th th--answer">2457448</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Размер: </th>
+                            <th class="th th--answer">38</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Цвет:</th>
+                            <th class="th th--answer">темно-зеленый</th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="flex-wrapper">
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Количество</div>
+                          <div class="product-item__price">1</div>
+                        </div>
+                        <div class="product-item__space"></div>
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Цена</div>
+                          <div class="product-item__price">4 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+              <li class="order-item__line"></li>
+              </li>
+              <li>
+                <div class="product-item product-item--no-border">
+                  <div class="product-item__img-wrapper ">
+                    <div class="product-item__img">
+                      <a href="product-card.html"><img src="img/order-item2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="product-item__wrapper">
+                    <h3 class="product-item__title">SCHUTZ</h3>
+                    <div class="product-item__wrapper-2">
+                      <div class="product-item__column">
+                        <div class="product-item__column-title">женские зеленые кожаные лодочки</div>
+                        <table class=" product-item__table table ">
+                          <tr class="tr">
+                            <th class="th th--ask">Артикул:</th>
+                            <th class="th th--answer">2457448</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Размер: </th>
+                            <th class="th th--answer">38</th>
+                          </tr>
+                          <tr class="tr">
+                            <th class="th th--ask">Цвет:</th>
+                            <th class="th th--answer">темно-зеленый</th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="flex-wrapper">
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Количество</div>
+                          <div class="product-item__price">1</div>
+                        </div>
+                        <div class="product-item__space"></div>
+                        <div class="product-item__column">
+                          <div class="product-item__column-title">Цена</div>
+                          <div class="product-item__price">4 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
