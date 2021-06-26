@@ -1,7 +1,7 @@
 $(document).ready(function() {
   //----------------------------------------links-active --------------------------------------//
   path = $(location).attr('pathname');
-  path = path.slice(1);
+  path = path.slice(8);
   links = $('.top-menu__link');
   console.log(links);
   console.log(path);
