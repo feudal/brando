@@ -1,14 +1,14 @@
 $(document).ready(function() {
   //----------------------------------------links-active --------------------------------------//
   path = $(location).attr('pathname');
-  path = path.slice(1);
+  path = path.slice(8);
   links = $('.top-menu__link');
   console.log(links);
   console.log(path);
 
   for (var i = links.length - 1; i >= 0; i--) {
-      console.log('is ...');
-    if($(links[i]).attr('href') == path) {
+    console.log('is ...');
+    if ($(links[i]).attr('href') == path) {
       console.log('is true');
       $(links[i]).addClass('active');
     }
@@ -385,4 +385,19 @@ $(document).ready(function() {
 
   });
   //----------------------------------------group-checkbox--------------------------------------//
+
+  //----------------------------------------toggle-order--------------------------------------//
+  $('.order-item__toggle').on('click', function() {
+    content = $(this).parent().parent().find('.order-item__content').slideToggle('medium', function() {
+      if ($(this).is(':visible')) {
+        $(this).css('display','flex');
+      }
+    });
+
+    content.parent().find('.order-item__toggle').toggleClass('order-item__toggle--active');
+    content.parent().find('.order-item__status').toggle();
+    content.parent().find('.order-item__images').toggle();
+  })
+  //----------------------------------------toggle-order--------------------------------------//
+
 });
