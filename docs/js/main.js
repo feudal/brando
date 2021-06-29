@@ -79,20 +79,7 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 1075,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
+    responsive: [
       {
         breakpoint: 640,
         settings: {
