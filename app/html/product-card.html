@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -171,7 +171,18 @@
             </div>
           </div>
           <div class="product-select__group">
-            <button class="product-select__button button button--green">Добавить в корзину</button>
+            <button data-fancybox data-src="#order" href="javascript:;" class="product-select__button button button--green">Добавить в корзину</button>
+            <!--                         form                         -->
+            <form style="display: none;" id="order" class="form form--white">
+              <h2 class="form__title">Товар добавлен в корзину</h2>
+              <div class="form__p40"></div>
+              @@include('./components/product-item-form.html')
+              <div class="form__line"></div>
+              <button class="button button--green">Продолжить покупки</button>
+              <div class="form__p20"></div>
+              <button class="button button--white">Продолжить покупки</button>
+            </form>
+            <!--                         form                         -->
             <div class="product-select__favorite active"></div>
           </div>
           <table class=" product-select__table table ">
@@ -344,12 +355,12 @@
         <div class="reviews">
           <button data-fancybox data-src="#review" href="javascript:;" class="button button--green reviews__button" id="#review">Оставить отзыв</button>
           <!--                         form                         -->
-          <form style="display: none;" id="review" class="review-form">
-            <div class="review-form__icon"></div>
-            <h2 class="review-form__title">Оставьте отзыв о товаре</h2>
-            <div class="review-form__text">Оставьте отзыв, и мы опубликуем его после проверки модератором</div>
-            <label class="review-form__label">
-              <input type="text" class="review-form__input" placeholder="Ваша оценка">
+          <form style="display: none;" id="review" class="form">
+            <div class="form__icon"></div>
+            <h2 class="form__title">Оставьте отзыв о товаре</h2>
+            <div class="form__text">Оставьте отзыв, и мы опубликуем его после проверки модератором</div>
+            <label class="form__label">
+              <input type="text" class="form__input" placeholder="Ваша оценка">
               <ul class="stars">
                 <li class="star active"></li>
                 <li class="star active"></li>
@@ -358,7 +369,7 @@
                 <li class="star "></li>
               </ul>
             </label>
-            <textarea type="text" class="review-form__textarea" placeholder="Отзыв"></textarea>
+            <textarea type="text" class="form__textarea" placeholder="Отзыв"></textarea>
             <button class="button button--green">Отправить</button>
           </form>
           <!--                         form                         -->

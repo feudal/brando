@@ -273,7 +273,6 @@ $(document).ready(function() {
   })
 
   $(".filter__item .checkbox").change(function() {
-    console.log('1');
     if (this.checked) { //if is checked
       val = $(this).parent().parent().parent().prev().children().text();
 

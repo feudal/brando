@@ -1,0 +1,122 @@
+/*****--------------------forms-----------------*****/
+.form {
+  background: $black;
+  color: $white;
+  &--white {
+    background: #fff;
+    color: $black;
+  }
+  &__line {
+    height: 1px;
+    width: 100%;
+    background: $grey2;
+    margin-bottom: 20px;
+  }
+
+  &__p40 {
+    margin-bottom: 40px;
+  }
+  &__p20 {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    background-color: $light-black;
+    background-image: url(../img/icons/review-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+
+    &--tick {
+      background-image: url(../img/icons/success.svg);
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: Geometria;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    &--green {
+      color: $green;
+    }
+  }
+
+  &__subtitle {
+    font-family: Geometria;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-family: Geometria;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__label {
+    width: 100%;
+    border: 2px solid $light-black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+
+  &__input {
+    border: 0;
+    background: transparent;
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $white;
+
+  }
+
+  &__textarea {
+    border: 2px solid $light-black;
+    resize: vertical;
+
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 15px 20px;
+    width: 100%;
+    min-height: 100px;
+    background: transparent;
+    color: $white;
+  }
+}
+
+/*****--------------------forms-----------------*****/
