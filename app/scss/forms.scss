@@ -120,3 +120,21 @@
 }
 
 /*****--------------------forms-----------------*****/
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 480px) {
+  .form {
+    padding: 20px 10px;
+    &__label {
+      padding: 15px 5px;
+    }
+    &__textarea {
+      padding: 10px;
+    }
+    &__input {
+      width: 150px;
+      flex-shrink: 1;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {}

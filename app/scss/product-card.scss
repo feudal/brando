@@ -1,4 +1,4 @@
-/*****--------------------star-----------------*****/
+/****--------------------star-----------------*****/
 .stars {
   display: flex;
 }
@@ -25,8 +25,9 @@
 
 /*****--------------------double-slider-----------------*****/
 .double-slider {
+  width: 100%;
   display: flex;
-
+  border: 1px solid red;
 }
 
 .navigator {
@@ -40,7 +41,7 @@
 
   border: 1px solid transparent;
 
-
+  border: 3px dotted green;
 
   .slick-list {
     border: 1px solid transparent;
@@ -89,6 +90,8 @@
 }
 
 .primary {
+  border: 3px dashed blue;
+
   flex-grow: 0;
   flex-shrink: 0;
   width: 500px;
@@ -713,7 +716,7 @@
     background: url(../img/icons/Arrow.svg) no-repeat center center;
 
     &.slick-prev {
-      left: -12 px;
+      left: -12px;
       transform: rotate(180deg);
     }
 
@@ -725,3 +728,167 @@
 
 /*****--------------------style_slider-----------------*****/
 
+/*****--------------------this-----------------*****/
+
+@media only screen and (max-width: 1440px) {
+  .product-select {
+    &__color {
+      margin-left: 20px;
+    }
+  }
+
+  .card__content-info {
+    width: 100%;
+  }
+
+  .card__content-price {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-select {
+    &__wrapper {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__link {
+      order: -1;
+      margin: 10px 0 20px 0;
+    }
+
+    &__color {
+      margin: 20px 0 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1075px) {
+  .main-group {
+    flex-direction: column;
+    margin-top: 0;
+
+    &>div {
+      width: 100%;
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+
+  .product-select {
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__color {
+      margin: 0 0 0 20px;
+    }
+
+    &__link {
+      order: 10;
+
+      display: inline-block;
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /*****--------------------comments-----------------*****/
+  .review {
+    &__block {
+      flex-direction: column;
+    }
+
+    &__block-name {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .review__block__content {
+    margin-top: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /*****--------------------comments-----------------*****/
+}
+
+@media only screen and (max-width: 640px) {
+
+  /*****--------------------comments-----------------*****/
+  .review__block__content {
+    padding: 20px;
+  }
+
+  /*****--------------------comments-----------------*****/
+  .product-select {
+    &__wrapper {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__link {
+      order: -1;
+      margin: 10px 0 20px 0;
+    }
+
+    &__color {
+      margin: 20px 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*****--------------------comments-----------------*****/
+
+  .reviews__title {
+    padding-bottom: 60px;
+  }
+
+  .reviews__button {
+    // position: relative;
+    width: 100%;
+    top: 60px;
+  }
+
+  /*****--------------------comments-----------------*****/
+  /*****--------------------button -----------------*****/
+  .product-select {
+    &__group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__favorite {
+      margin-left: 10px;
+    }
+  }
+
+  /*****--------------------button -----------------*****/
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  /*****--------------------comments-----------------*****/
+  .review__block-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /*****--------------------comments-----------------*****/
+}
+
+/*****--------------------this-----------------****/
