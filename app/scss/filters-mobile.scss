@@ -40,6 +40,7 @@
   }
 
   &__exit {
+  	cursor: pointer;
     text-transform: uppercase;
 
     &::before {
@@ -64,6 +65,7 @@
   }
 
   &__title {
+  	cursor: pointer;
     font-family: Geometria;
     font-size: 16px;
     font-style: normal;
