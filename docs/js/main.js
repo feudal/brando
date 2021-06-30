@@ -79,8 +79,7 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
@@ -415,5 +414,18 @@ $(document).ready(function() {
     content.parent().find('.order-item__images').toggle();
   })
   //----------------------------------------toggle-order--------------------------------------//
-
+  //----------------------------------------mobile-filters--------------------------------------//
+  $('.filters-mobile__title').on('click', function() {
+    console.log('123');
+    $(this).next().slideToggle();
+    $(this).find('.plus-black').toggle();
+    $(this).find('.minus-black').toggle();
+  })
+  $('.filters-mobile__exit').on('click', function() {
+    $(this).parent().parent().slideUp();
+  })
+  $('.mini-filters__button ').on('click', function() {
+    $('.filters-mobile').slideDown();
+  })
+  //----------------------------------------mobile-filters--------------------------------------//
 });
